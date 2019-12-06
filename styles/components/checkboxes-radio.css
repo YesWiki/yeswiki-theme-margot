@@ -44,6 +44,7 @@
   margin-top: 3px;
   -webkit-transition: .2s;
   transition: .2s;
+  margin-top: 8px;
 }
 
 [type="checkbox"]:not(:checked) + span:not(.lever):after {
@@ -149,6 +150,7 @@
   margin: 4px;
   width: 16px;
   height: 16px;
+  margin-top: 10px;
   z-index: 0;
   -webkit-transition: .28s ease;
   transition: .28s ease;

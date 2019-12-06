@@ -5,21 +5,12 @@
   display: block;
   font-weight: normal;
 }
-.type-modif-container [type="radio"] + span:not(.lever):before,
-.type-modif-container [type="radio"] + span:not(.lever):after {
-  margin-top: 10px;
-}
-
 
 .edit-acl-container {
   margin-bottom: 1.5rem;
 }
 .edit-acl-container .switch {
   margin-bottom: .5rem ;
-}
-.acl-single-container [type="checkbox"] + span:not(.lever):before,
-.acl-single-container [type="checkbox"] + span:not(.lever):after {
-  margin-top: 8px;
 }
 
 td > label {
