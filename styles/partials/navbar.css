@@ -30,6 +30,11 @@
   display: flex;
   justify-content: center;
 }
+@media (min-width: 801px) {
+  #yw-topnav .links-container {
+    display: flex !important;
+  }
+}
 @media (max-width: 800px) {
   #yw-topnav {
     padding: 0;
