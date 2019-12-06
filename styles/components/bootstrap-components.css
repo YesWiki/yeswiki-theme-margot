@@ -97,6 +97,11 @@
   background-color: var(--neutral-color);
   border-color: var(--neutral-color);
 }
+.panel-title > .alert-msg {
+  margin-right: 2rem;
+  font-size: .9rem;
+  margin-top: 1px;
+}
 .panel-primary {
   border-color: var(--primary-color);
   --checkbox-color: var(--primary-color);
@@ -106,11 +111,11 @@
   background-color: var(--primary-color);
   border-color: var(--primary-color);
 }
-.panel-secondary-1 {
+.panel-secondary-1, .panel-warning {
   border-color: var(--secondary-color-1);
   --checkbox-color: var(--secondary-color-1);
 }
-.panel-secondary-1 > .panel-heading {
+.panel-secondary-1 > .panel-heading, .panel-warning > .panel-heading {
   color: var(--neutral-light-color);
   background-color: var(--secondary-color-1);
   border-color: var(--secondary-color-1);

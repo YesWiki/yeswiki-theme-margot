@@ -60,3 +60,22 @@ label.edit-group strong {
 @media (max-width: 1200px) {
   td > label { padding-left: .2rem; }
 }
+
+#accordion_update .panel {
+  margin-bottom: 1rem;
+}
+
+#accordion_update .dataTables_header {
+  margin: .5rem -.3rem 0  0;
+}
+#accordion_update .dataTables_footer {
+  margin: 0 0 .5rem 0;
+}
+
+.gerer-theme thead > tr > th:first-child {
+  padding-left: .8rem;
+  padding-bottom: 0;
+}
+.gerer-theme thead > tr > th:first-child > label {
+  margin-bottom: -30px;
+}
