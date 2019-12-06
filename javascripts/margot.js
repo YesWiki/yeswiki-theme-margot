@@ -95,6 +95,17 @@ $(document).ready(function() {
       });
     }
   });
+
+  // Datatables
+  $('.dataTables_wrapper').each(function() {
+    var search = $(this).find('.dataTables_filter input[type=search]');
+    search.prependTo(search.closest('.dataTables_filter'));
+    search.before('<span class="input-group-addon"><i class="fa fa-search search-icon"></i></span>');
+    search.parent().addClass('input-group');
+    $(this).find('.dataTables_filter label').remove();
+    $(this).find('> .row:first-child').addClass('dataTables_header');
+    $(this).find('> .row:last-child').addClass('dataTables_footer');
+  });
 });
 
 function resizeNav() {

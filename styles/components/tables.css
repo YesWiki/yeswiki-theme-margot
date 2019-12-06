@@ -22,3 +22,75 @@
 @media screen and (max-width: 800px) {
   .table-responsive { border:none !important };
 }
+
+
+/* Datatbles */
+
+/* Header */
+.dataTables_header {
+  display: flex;
+  align-items: flex-end;
+  font-size: .9rem;
+  margin-bottom: .3rem !important;
+}
+.dataTables_header > .col-sm-6:last-child {
+  text-align: right;
+}
+.dataTables_header input[type=search] {
+  margin-left: 0 !important;
+  font-size: .9rem;
+  height: 2.3rem;
+  padding: .5em;
+}
+.dataTables_header .input-group-addon {
+  height: 2.3rem;
+  line-height: 2.3rem;
+  padding: 0 11px;
+}
+.dataTables_filter .search-icon:before {
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.dataTables_length label {
+  display: flex;
+  align-items: center;
+}
+.dataTables_length label select {
+  margin: 0 .5rem;
+}
+
+/* footer */
+.dataTables_footer {
+  margin-top: .5rem !important;
+  font-size: .9rem;
+}
+
+.pagination > li > a {
+  position: relative;
+  float: left;
+  background-color: transparent;
+  border: 2px solid var(--primary-color) !important;
+  color: var(--primary-color);
+}
+.pagination > li:not(:first-child) > a {
+  border-left: none !important;
+}
+.pagination > li.active > a {
+  background-color: var(--primary-color);
+  color: var(--neutral-light-color);
+}
+.pagination > li:not(.disabled):hover > a,
+.pagination > li:not(.disabled) > a:focus {
+  border-color: var(--primary-color) !important;
+  background-color: var(--primary-color) !important;
+  color: var(--neutral-light-color) !important;
+  opacity: .8;
+}
+
+table.dataTable.table-condensed .sorting:after,
+table.dataTable.table-condensed .sorting_asc:after,
+table.dataTable.table-condensed .sorting_desc:after {
+  top: initial !important;
+  bottom: 6px;
+}
