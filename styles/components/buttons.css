@@ -56,6 +56,24 @@
   background: var(--secondary-color-2);
 }
 
+.alert .btn {
+  background-color: var(--neutral-light-color);
+}
+.alert .btn-neutral {
+  color: var(--neutral-color);
+}
+.alert .btn-primary {
+  color: var(--primary-color);
+}
+.alert .btn-info,
+.alert .btn-secondary-1 {
+  color: var(--secondary-color-1);
+}
+.alert .btn-warning,
+.alert .btn-secondary-2 {
+  color: var(--secondary-color-2);
+}
+
 .btn-xs {
   padding: 2px 8px !important;
   border-radius: .3em;
