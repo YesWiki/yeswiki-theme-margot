@@ -62,6 +62,38 @@ textarea.form-control {
   height: 9px;
   z-index: -1;
 }
+.form-group.date .control-label {
+  left: 65px;
+}
+.form-group.date .controls {
+  display: flex;
+}
+.form-group.date .select-time{
+  margin-left: 1.5rem;
+}
+.form-group.date .select-hour, .form-group.date .select-minutes {
+    width: 80px !important;
+}
+.form-group.date .select-allday, .form-group.date .select-minutes {
+  border-left: none !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+.form-group.date .bazar-date, .form-group.date .select-hour {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.datepicker table tr td.active {
+  background-color: var(--primary-color) !important;
+}
+.table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td,
+.table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
+  padding: 2px 8px;
+}
+.datepicker-dropdown {
+  padding: 10px !important;
+}
+
 .form-group.wiki-textarea .control-label {
   position: relative;
   top: 1.7rem;
