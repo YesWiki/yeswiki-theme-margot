@@ -53,35 +53,29 @@
 }
 .fc-event-container a {
   font-size: .8em;
-  border: none !important;
   padding: 2px 5px 1px 5px !important;
-
-/*margin: .7em -1px 0 -1px;
-  border-radius: 0px !important;
-*/
+  border: 2px solid white;
   margin: .6em 5px 0 5px;
   border-radius: 2px;
 }
-/*.fc-content-skeleton tbody tr:nth-child(3) a, .fc-content-skeleton tbody tr:nth-child(4) a {
-  margin-left: 0;
-}*/
 .fc-event-container a .fc-content {
   width: 100%;
   text-overflow: ellipsis;
 }
-.fc-event-container a { background-color: var(--secondary-color-1) !important; }
-tr .fc-event-container:nth-child(1) a { background-color: var(--secondary-color-1) !important; }
-tr .fc-event-container:nth-child(2) a { background-color: var(--secondary-color-2) !important; }
-tr .fc-event-container:nth-child(3) a { background-color: var(--primary-color) !important; }
-tr .fc-event-container:nth-child(4) a { background-color: var(--secondary-color-1) !important; }
-tr .fc-event-container:nth-child(5) a { background-color: var(--secondary-color-2) !important; }
-tr .fc-event-container:nth-child(6) a { background-color: var(--primary-color) !important; }
-tr .fc-event-container:nth-child(7) a { background-color: var(--secondary-color-1) !important; }
+.fc-event-container a { background-color: var(--secondary-color-1) ; }
+tr .fc-event-container:nth-child(1) a { background-color: var(--secondary-color-1) ; }
+tr .fc-event-container:nth-child(2) a { background-color: var(--secondary-color-2) ; }
+tr .fc-event-container:nth-child(3) a { background-color: var(--primary-color) ; }
+tr .fc-event-container:nth-child(4) a { background-color: var(--secondary-color-1) ; }
+tr .fc-event-container:nth-child(5) a { background-color: var(--secondary-color-2) ; }
+tr .fc-event-container:nth-child(6) a { background-color: var(--primary-color) ; }
+tr .fc-event-container:nth-child(7) a { background-color: var(--secondary-color-1) ; }
 .fc a.fc-more {
   font-size: .8em;
   font-weight: bold;
   line-height: 2.2;
   cursor: pointer;
+  background-color: transparent !important;
 }
 .fc .fc-more-cell {
   text-align: center;
