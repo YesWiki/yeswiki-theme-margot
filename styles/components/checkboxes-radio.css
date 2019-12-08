@@ -47,6 +47,11 @@
   margin-top: 8px;
 }
 
+table.dataTable [type="checkbox"] + span:not(.lever):before,
+table.dataTable [type="checkbox"] + span:not(.lever):after {
+  margin-top: 2px;
+}
+
 [type="checkbox"]:not(:checked) + span:not(.lever):after {
   border: 0;
 }
