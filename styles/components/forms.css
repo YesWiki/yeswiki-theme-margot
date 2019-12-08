@@ -52,7 +52,18 @@ textarea.form-control {
   padding: 0 4px 0 8px;
   top: -.8em;
 }
-.form-group:not(.file) .control-label::before {
+.form-group:not(.file) .title-label.control-label {
+  position: relative;
+  padding: 0;
+  top: 0;
+  left: auto;
+  margin-left: 15px;
+  background: none;
+  padding-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.form-group:not(.file) .control-label:not(.title-label)::before {
   content: "";
   background-color: #f9f9f9;
   position: absolute;
@@ -154,7 +165,14 @@ input.form-control[type=file]::before {
   color: var(--neutral-light-color);
   border: none;
 }
-.input-group-addon + .form-control {
+a.input-group-addon:hover {
+  color: var(--neutral-light-color);
+  opacity: .9;
+}
+.form-control + .input-group-addon, input + .input-group-addon {
+  border-radius: 0 5px 5px 0;
+}
+.input-group-addon + .form-control, .input-group-addon + input {
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
 }

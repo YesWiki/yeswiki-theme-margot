@@ -97,3 +97,32 @@ pre.precsv {
   margin-top: 40px;
   margin-top: 20px;
 }
+
+/* LISTES */
+ul.list-sortables {
+  margin-bottom: 1.5rem !important;
+}
+
+.suppression_label_liste {
+  background-color: var(--danger-color) !important;
+  opacity: .8;
+}
+
+.list-sortables .liste_ligne {
+  display: flex !important;
+}
+.list-sortables .liste_ligne .input-label {
+  flex: 2 !important;
+}
+
+.handle-listitems {
+  background-color: var(--neutral-color) !important;
+}
+.handle-listitems + input {
+  border-left: none !important;
+}
+.btn.ajout_label_liste {
+  background-color: var(--neutral-light-color);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
