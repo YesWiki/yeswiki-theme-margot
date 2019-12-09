@@ -72,6 +72,13 @@ pre.precsv {
 #form-builder-container .form-wrap.form-builder .frmb {
   margin: 0;
 }
+#form-builder-container .form-elements .form-group label {
+  padding-top: 6px;
+  font-size: .9rem;
+}
+#form-builder-container .form-elements .form-group.required-wrap label {
+  padding-top: 3px;
+}
 #form-builder-container .form-group {
   margin-top: 5px;
   margin-bottom: 5px;
