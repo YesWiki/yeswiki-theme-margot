@@ -106,6 +106,14 @@ $(document).ready(function() {
     $(this).find('.dataTables_filter label').remove();
     $(this).find('> .row:first-child').addClass('dataTables_header');
     $(this).find('> .row:last-child').addClass('dataTables_footer');
+
+    var container = $(this)
+    var paginationSelect = $(this).find('.dataTables_length select')
+    paginationSelect.change(function() {
+      var pagination = container.find('.pagination')
+      pagination.closest('.dataTables_footer')
+                .toggleClass('no-pagination', pagination.find('li').length <= 3)
+    }).trigger('change');
   });
 });
 

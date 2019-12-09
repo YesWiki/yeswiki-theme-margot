@@ -72,6 +72,7 @@ table.dataTable .prevent-sorting:after {
 }
 .dataTables_length label select {
   margin: 0 .5rem;
+  border: 1px solid #dddddd;
 }
 
 /* footer */
@@ -80,24 +81,29 @@ table.dataTable .prevent-sorting:after {
   font-size: .9rem;
 }
 
+.dataTables_footer.no-pagination .pagination {
+  display:none;
+}
+.dataTables_footer.no-pagination .dataTables_info {
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
 .pagination > li > a {
   position: relative;
   float: left;
   background-color: transparent;
-  border: 2px solid var(--primary-color) !important;
+  border: 1px solid #dddddd !important;
   color: var(--primary-color);
 }
 .pagination > li:not(:first-child) > a {
   border-left: none !important;
 }
-.pagination > li.active > a {
+.pagination > li.active > a, .pagination > li.active:hover > a {
   background-color: var(--primary-color);
   color: var(--neutral-light-color);
 }
-.pagination > li:not(.disabled):hover > a,
-.pagination > li:not(.disabled) > a:focus {
-  border-color: var(--primary-color) !important;
-  background-color: var(--primary-color) !important;
-  color: var(--neutral-light-color) !important;
-  opacity: .8;
+.pagination > li:not(.disabled):not(.active):hover > a,
+.pagination > li:not(.disabled):not(.active) > a:focus {
+  background-color: #f0f0f0 !important;
+  color: var(--primary-color) !important;
 }
