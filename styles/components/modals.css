@@ -39,6 +39,9 @@
   transition: opacity .5s;
 }
 @media (min-width: 768px) {
+  .modal-dialog { width: 800px; }
+}
+@media (min-width: 768px) {
   .modal-dialog.modal-lg { width: calc(100% - 50px); }
 }
 @media (min-width: 992px) {
@@ -46,4 +49,11 @@
     width: calc(100% - 100px);
     max-width: 1400px;
   }
+}
+.modal .separator {
+  background-color: var(--primary-color);
+  height: 8px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  margin-top: -1rem;
 }

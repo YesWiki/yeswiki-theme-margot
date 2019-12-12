@@ -28,6 +28,23 @@ $(document).ready(function() {
     parent.addClass("form-control wrapper");
   });
 
+  // move image to be just bellow title
+  $(".BAZ_cadre_fiche").each(function() {
+    var title = $(this).find('.BAZ_fiche_titre');
+    var image = $(this).find('[data-id=bf_image]');
+    $(this).prepend(image).prepend(title);
+  })
+  // also when page is loaded in modal
+  $(document).on("yw-modal-open", function() {
+    $modal = $("#YesWikiModal")
+    $modal.find('.modal-header h3').remove();
+    var title = $modal.find('.BAZ_fiche_titre');
+    var image = $modal.find('[data-id=bf_image]');
+    $modal.find('.modal-header').prepend(title)
+    $modal.find(".BAZ_cadre_fiche").prepend(image);
+    $modal.find('.modal-body').prepend("<div class='separator'></div>")
+  });
+
   // ajout du span pour les checkbox/radio oubliés
   $(":checkbox, :radio").each(function() {
     if (
