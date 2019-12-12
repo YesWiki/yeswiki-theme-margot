@@ -1,0 +1,55 @@
+.annuaire-title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.annuaire-title i {
+  font-size: 3.5rem;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.bazar-list #lettres_init {
+  margin-top: -.5rem;
+}
+.bazar-list #lettres_init a {
+  color: var(--neutral-color);
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0 8px;
+  transition: all .1s;
+}
+.bazar-list #lettres_init a:hover,
+.bazar-list #lettres_init a:focus {
+  background-color: var(--primary-color);
+  color: var(--neutral-light-color);
+  border-radius: 6px;
+  text-decoration: none;
+}
+.bazar-list .wrapper_nombre_membres {
+  background-color: var(--primary-color);
+  height: 12px;
+  border-radius: 12px;
+  margin-top: .8rem;
+}
+.wrapper_nombre_membres .nombre_membres {
+  display: none;
+}
+
+.annuaire-fiches-container .bazar-entry {
+  color: var(--neutral-color);
+  transition: color .2s;
+}
+.annuaire-fiches-container .bazar-entry:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.annuaire-fiches-container .letter-title {
+  margin-bottom: .5rem;
+}
+.annuaire-fiches-container .letter-title span {
+  background-color: var(--secondary-color-1);
+  color: var(--neutral-light-color);
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}

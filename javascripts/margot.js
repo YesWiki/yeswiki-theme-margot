@@ -132,6 +132,14 @@ $(document).ready(function() {
                 .toggleClass('no-pagination', pagination.find('li').length <= 3)
     }).trigger('change');
   });
+
+  // Annuaire
+  $('.bazar-list[data-template="annuaire_alphabetique.tpl.html"').each(function() {
+    if ($(this).prev().is('h1, h2, h3, h4, h5')) {
+      $(this).prev().addClass('annuaire-title')
+      $(this).prev().prepend('<i class="fa fa-search fa-flip-horizontal"></i>')
+    }
+  })
 });
 
 function resizeNav() {
