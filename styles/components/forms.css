@@ -235,7 +235,7 @@ form .col-sm-9 {
   margin-left: .3rem;
   margin-right: 3px;
 }
-.input-group-addon:last-child{
+.input-group-addon:last-child, .input-group-btn:last-child > .btn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border: 2px solid var(--primary-color);
