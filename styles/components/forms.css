@@ -17,6 +17,9 @@
   border-radius: 3px !important;
   background-color: #f9f9f9;
 }
+.ace-editor-container, .ace-body {
+  background-color: #f9f9f9;
+}
 .control-group .controls {
   margin-left: 0 !important;
 }
@@ -140,6 +143,7 @@ input.form-control[type=file] {
   padding-left: 0;
   padding-top: .5em;
   cursor: pointer;
+  position: relative;
 }
 input.form-control[type=file]::before {
   content: "Choisir un fichier";
@@ -240,8 +244,6 @@ form .col-sm-9 {
   border-bottom-left-radius: 0;
   border: 2px solid var(--primary-color);
   border-left: none;
-  background: 
-  #f9f9f9;
   padding-bottom: 8px;
 }
 /* MAP */
@@ -275,4 +277,26 @@ form .col-sm-9 {
 
 @media (max-width: 1200px) {
   .form-group .control-label { font-size: .9em; }
+}
+
+.form-group.summernote, .form-group.summernote .controls {
+  padding: 0;
+  margin-top: 0;
+}
+.form-group.summernote .note-editor {
+  margin-bottom: 0;
+  border: none;
+}
+.form-group.summernote .note-editable { padding: 1em; }
+
+.form-horizontal .radio.inline-container,
+.form-horizontal .checkbox.inline-container {
+  padding-top: 0;
+}
+.inline-container > label {
+  margin-right: 1rem;
+}
+.inline-container [type="radio"]:not(:checked) + span:not(.lever),
+.inline-container [type="radio"]:checked + span:not(.lever) {
+  margin-right: -5px;
 }

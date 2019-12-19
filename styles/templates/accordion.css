@@ -60,7 +60,9 @@
 }
 .bazar-list .panel:not(.collapsed) .panel-title {
   color: var(--primary-color);
+  font-size: 1.3rem;
   margin-bottom: 5px;
+  margin-bottom: .8rem;
 }
 .bazar-list .panel-body .BAZ_fiche_titre {
   display: none;
@@ -72,6 +74,7 @@
   padding: 0;
   margin: 0;
   margin-left: -.9rem;
+  margin-top: 1rem;
   border-top: 1px dashed var(--neutral-soft-color);
   margin-right: -.9rem;
   border-radius: 0;
@@ -79,11 +82,23 @@
   opacity: .8;
   background-color: transparent;
 }
+.modal .BAZ_fiche_info {
+  padding-bottom: 0;
+}
 .BAZ_actions_fiche {
   padding-top: .4rem;
 }
 .BAZ_cadre_fiche {
-  padding-top: .6rem;
+  padding-top: 1rem;
+}
+.bazar-list .panel .panel-collapse .panel-body::before {
+  background-color: var(--primary-color);
+  height: 2px;
+  opacity: .5;
+  border-radius: 6px;
+  content: "";
+  width: 100%;
+  bottom: 0;
 }
 .bazar-list .panel-heading[data-toggle=collapse] {
   --chevron-color: var(--neutral-soft-color);
@@ -93,7 +108,7 @@
 }
 .bazar-list .panel-heading[data-toggle=collapse]:after {
   transition: border-color .2s;
-  top: 1.5em;
+  top: 2em;
   right: .5em;
 }
 .bazar-list .panel-heading.collapsed[data-toggle=collapse]:after {

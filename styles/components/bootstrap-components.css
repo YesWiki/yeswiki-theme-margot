@@ -92,7 +92,7 @@
   border-color: var(--neutral-color);
   --checkbox-color: var(--neutral-color);
 }
-.panel-default > .panel-heading {
+.panel-default:not(.note-editor) > .panel-heading {
   color: var(--neutral-light-color);
   background-color: var(--neutral-color);
   border-color: var(--neutral-color);

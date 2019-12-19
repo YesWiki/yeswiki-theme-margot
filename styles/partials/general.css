@@ -116,3 +116,6 @@ img {
 ul {
   padding-left: 2rem;
 }
+.del, .ace-body .ace_stroke {
+  color: var(--secondary-color-2);
+}
