@@ -18,7 +18,8 @@ $(document).ready(function() {
     );
     parent.addClass($(this).attr("type"));
     if ($(this).hasClass('bazar-date')) parent.addClass('date');
-    if ($(this).hasClass("wiki-textarea")) {
+    if ($(this).hasClass('summernote')) parent.addClass('summernote');
+    if ($(this).hasClass("wiki-textarea") || $(this).hasClass("nohtml")) {
       parent.addClass("wiki-textarea");
       parent.find(".control-label").prependTo(parent.find(".aceditor-toolbar"));
     }
