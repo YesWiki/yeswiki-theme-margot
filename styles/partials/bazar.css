@@ -39,10 +39,10 @@ pre.precsv {
   font-weight: 600 !important;
 }
 .panel-body .BAZ_label {
-  color: var(--neutral-color);
+  color: var(--primary-color);
   margin: 0;
   font-size: 1rem;
-  font-weight: bold !important;
+  font-weight: 600 !important;
 }
 .BAZ_cadre_fiche [data-id=bf_image] {
   float: right;
