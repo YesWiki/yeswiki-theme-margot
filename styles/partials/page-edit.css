@@ -20,6 +20,15 @@
   background: #eee;
 }
 
+#ACEditor .btn-toolbar {
+  border-bottom: 2px solid var(--primary-color);
+}
+.ace-editor-container {
+  border: 2px solid var(--primary-color);
+  border-top: none;
+  border-radius: 0 0 3px 3px;
+}
+
 /* no need to chose background because there is no background for margot theme*/
 #form_graphical_options #bgCarousel, #form_graphical_options h3 {
   display: none;
