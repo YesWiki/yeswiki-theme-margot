@@ -211,7 +211,6 @@
   color: var(--neutral-light-color) !important;
   font-size: 5rem;
   top: -1.4rem;
-  right: -2rem;
   padding: 0 2rem;
 }
 #search .yeswiki-search-form .btn-search, #search .yeswiki-search-form .search-query {
@@ -231,5 +230,24 @@
 @media (max-width: 800px) {
   #search .yeswiki-search-form { margin-left: 1.9rem !important; }
   #search .btn.close-search { padding-right: .9rem; }
+}
+#LoginModal .login-form-modal {
+  margin-top: -20px;
+}
+.login-form {
+  margin: 0 auto;
+  max-width: 500px;
+}
+.login-form-dropdown {
+  font-size: 1rem;
+}
+.login-form-inline [type=submit] {
+  margin-left: .5rem;
+}
+#LoginModal .modal-dialog {
+  max-width: 600px;
+}
+#LoginModal input[name=login], .login-form [type=submit], .login-form-dropdown [type=submit] {
+  margin-top: 1rem;
 }
 

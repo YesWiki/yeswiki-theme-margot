@@ -24,6 +24,10 @@
 }
 .ace-editor-container {
   border: 2px solid var(--primary-color);
+  border-radius: 3px 3px;
+}
+
+#ACEditor .ace-editor-container {
   border-top: none;
   border-radius: 0 0 3px 3px;
 }

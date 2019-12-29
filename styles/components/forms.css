@@ -47,15 +47,15 @@ textarea.form-control {
 .form-group.textarea.wiki-textarea {
   margin-top: -10px;
 }
-.form-group:not(.file) .control-label {
+.form-group:not(.file):not(.checkbox) .control-label {
   position: absolute;
   z-index: 5;
-  left: 24px;
+  left: 1.2rem;
   background-color: var(--neutral-light-color);
   padding: 0 4px 0 8px;
   top: -.8em;
 }
-.form-group:not(.file) .title-label.control-label {
+.form-group:not(.file):not(.checkbox) .title-label.control-label {
   position: relative;
   padding: 0;
   top: 0;
@@ -66,7 +66,7 @@ textarea.form-control {
   margin-bottom: 1rem;
   font-size: 1rem;
 }
-.form-group:not(.file) .control-label:not(.title-label)::before {
+.form-group:not(.file):not(.checkbox) .control-label:not(.title-label)::before {
   content: "";
   background-color: #f9f9f9;
   position: absolute;
@@ -75,6 +75,12 @@ textarea.form-control {
   right: 0;
   height: 9px;
   z-index: -1;
+}
+.form-group.checkbox .control-label {
+  position: absolute;
+  left: 2rem;
+  font-size: .9em;
+  bottom: 3px;
 }
 .form-group.date .control-label {
   left: 65px;
@@ -214,6 +220,9 @@ input[type=file] ~ output img {
 }
 form {
   position: relative;
+}
+form.form-horizontal {
+  margin-bottom: 1.5rem;
 }
 form .col-sm-9 {
   width: 100%;

@@ -24,6 +24,10 @@ $(document).ready(function() {
       parent.find(".control-label").prependTo(parent.find(".aceditor-toolbar"));
     }
   });
+  $('[type=checkbox]').each(function() {
+    $(this).closest(".form-group").addClass('checkbox');
+  });
+
   $(".controls .radio, .controls .checkbox").each(function() {
     var parent = $(this).closest(".form-group");
     parent.addClass("form-control wrapper");
