@@ -28,9 +28,11 @@ function hasScrolled() {
   if (st > lastScrollTop && st > navbarHeight && ywnavbar.hasClass('affix') && st > minOffsetForHiding) {
     // Scroll Down
     ywnavbar.addClass('nav-up');
+    ywnavbar.removeClass('nav-down');
   } else {
     // Scroll Up
     if (st + $(window).height() < $(document).height()) {
+      ywnavbar.addClass('nav-down');
       ywnavbar.removeClass('nav-up');
     }
   }

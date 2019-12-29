@@ -1,4 +1,5 @@
 .btn-toolbar {
+  transition: top 0.3s ease-in-out;
   margin-left: 0;
 }
 .btn-toolbar > .btn-group {
@@ -101,3 +102,6 @@ box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 6px var(--primary-color);
 #accordion-avanced-page-settings {
   margin-top: 20px;
 }
+
+.nav-up ~ #yw-main #ACEditor .btn-toolbar {top:0}
+.nav-down ~ #yw-main #ACEditor .btn-toolbar {top:69px}
