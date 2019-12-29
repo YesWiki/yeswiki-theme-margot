@@ -58,6 +58,12 @@
   font-size: 1rem;
   transition: all .3s;
 }
+.bazar-list .BAZ_label {
+  color: var(--neutral-color);
+  font-weight: bold !important;
+  margin: 0;
+  font-size: 1rem;
+}
 .bazar-list .panel:not(.collapsed) .panel-title {
   color: var(--primary-color);
   font-size: 1.3rem;
@@ -88,7 +94,7 @@
 .BAZ_actions_fiche {
   padding-top: .4rem;
 }
-.BAZ_cadre_fiche {
+/*.BAZ_cadre_fiche {
   padding-top: 1rem;
 }
 .bazar-list .panel .panel-collapse .panel-body::before {
@@ -99,7 +105,7 @@
   content: "";
   width: 100%;
   bottom: 0;
-}
+}*/
 .bazar-list .panel-heading[data-toggle=collapse] {
   --chevron-color: var(--neutral-soft-color);
 }
