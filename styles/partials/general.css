@@ -43,6 +43,7 @@ html, body { /* define also html so we can use rem */
   font-family: var(--main-text-fontfamily);
   padding: 0 !important;
   line-height: 1.6;
+  background-image: none !important;
 }
 
 /* background color of selected text */
