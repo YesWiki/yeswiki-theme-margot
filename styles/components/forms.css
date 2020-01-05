@@ -47,15 +47,17 @@ textarea.form-control {
 .form-group.textarea.wiki-textarea {
   margin-top: -10px;
 }
-.form-group:not(.file):not(.checkbox) .control-label {
+.form-group:not(.file):not(.checkbox) .control-label,
+.form-group.wrapper.checkbox .control-label {
   position: absolute;
   z-index: 5;
-  left: 1.2rem;
+  left: 1.7rem;
   background-color: var(--neutral-light-color);
   padding: 0 4px 0 8px;
   top: -.8em;
 }
-.form-group:not(.file):not(.checkbox) .title-label.control-label {
+.form-group:not(.file):not(.checkbox) .title-label.control-label,
+.form-group.wrapper.checkbox .title-label.control-label {
   position: relative;
   padding: 0;
   top: 0;
@@ -66,7 +68,8 @@ textarea.form-control {
   margin-bottom: 1rem;
   font-size: 1rem;
 }
-.form-group:not(.file):not(.checkbox) .control-label:not(.title-label)::before {
+.form-group:not(.file):not(.checkbox) .control-label:not(.title-label)::before,
+.form-group.wrapper.checkbox .control-label:not(.title-label)::before {
   content: "";
   background-color: #f9f9f9;
   position: absolute;
@@ -76,14 +79,14 @@ textarea.form-control {
   height: 9px;
   z-index: -1;
 }
-.form-group.checkbox .control-label {
+/*.form-group.checkbox:not(.wrapper) .control-label {
   position: absolute;
-  left: 2rem;
+  left: 1.7rem;
   font-size: .9em;
   bottom: 3px;
-}
+}*/
 .form-group.date .control-label {
-  left: 65px;
+  left: 65px !important;
 }
 .form-group.date .controls {
   display: flex;
@@ -92,7 +95,7 @@ textarea.form-control {
   margin-left: 1.5rem;
 }
 .form-group.date .select-hour, .form-group.date .select-minutes {
-    width: 80px !important;
+  width: 80px !important;
 }
 .form-group.date .select-allday, .form-group.date .select-minutes {
   border-left: none !important;
@@ -115,13 +118,13 @@ textarea.form-control {
 }
 
 .form-group.wiki-textarea .control-label {
-  position: relative;
-  top: 1.7rem;
-  left: 0;
+  position: relative !important;
+  top: 1.7rem !important;
+  left: .2rem !important;
   margin-left: 10px;
 }
 .form-group.wrapper .control-label {
-  left: 9px;
+  left: .75rem!important;
 }
 .form-group.input.file .control-label {
   margin-bottom: 5px;
@@ -134,6 +137,8 @@ textarea.form-control {
   margin-left: 0px;
   padding-left: 0;
   padding-bottom: 10px;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 select.input-sm {
   font-size: .9em;
