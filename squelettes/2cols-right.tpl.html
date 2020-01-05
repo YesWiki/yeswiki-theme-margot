@@ -42,19 +42,16 @@
       {{include page="PageHeader" class="yw-headerpage" doubleclic="1"}}
     </header><!-- /#yw-header -->
 
-    <div id="yw-main" role="main" {{doubleclic}}>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-9">
-            {WIKINI_PAGE}
-          </div>
-          <div class="col-md-3">
-            {{include page="PageMenu" class="menupage" doubleclic="1" actif="1"}}
-          </div>
-        </div><!-- /.row -->
-        {{barreredaction}}
-      </div> <!-- /.container -->
+    <div id="yw-main" class="with-side-bar" role="main" {{doubleclic}}>
+      <div class="yw-main-content">
+        {WIKINI_PAGE}
+      </div>
+      <div class="side-bar right">
+        {{include page="PageMenu" class="menupage" doubleclic="1" actif="1"}}
+      </div>
     </div><!-- /#yw-main -->
+
+    {{barreredaction}}
 
     <footer id="yw-footer">
       <div class="container">

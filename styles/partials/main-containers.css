@@ -2,17 +2,9 @@
 
 #yw-container {
   margin: var(--main-container-margin);
-  -moz-border-radius: var(--main-container-border-radius);
-  -webkit-border-radius: var(--main-container-border-radius);
   border-radius: var(--main-container-border-radius);
   width: var(--main-container-width);
-  -moz-box-shadow: var(--main-container-box-shadow);
-  -webkit-box-shadow: var(--main-container-box-shadow);
   box-shadow: var(--main-container-box-shadow);
-}
-
-#yw-container .container {
-  max-width: var(--main-container-width);
 }
 
 .page .background-image {
@@ -27,15 +19,45 @@
 
 /* Partie centrale de la page Wiki */
 #yw-main {
-  padding-top: 1.5rem;
+  padding: 1rem;
   position: relative;
   min-height: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
-#yw-main .container {
-  max-width: var(--main-container-text-width);
+@media (min-width: 992px) {
+  #yw-main { padding: 1.5rem; }
 }
-@media (max-width: 992px) {
-  #yw-main .container { width: 100% !important; }
-  #yw-main { padding-top: 1rem; }
+@media (min-width: 1200px) {
+  #yw-main { padding: 1.5rem 2rem; }
 }
 
+
+#yw-main .side-bar {
+  width: 15rem;
+}
+#yw-main .side-bar.left {
+  margin-right: 2rem;
+}
+#yw-main .side-bar.right {
+  margin-left: 2rem;
+}
+@media (max-width: 800px) {
+  #yw-main {
+    flex-direction: column;
+  }
+  .page, .menupage, .rightcolumnpage {
+    min-height: 0;
+  }
+  #yw-main .side-bar {
+    width: 100%;
+    height: auto;
+    margin: 0 !important;
+  }
+}
+#yw-main .yw-main-content {
+  width: 100%;
+  flex: 1 auto;
+  max-width: 1100px;
+}
