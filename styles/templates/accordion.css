@@ -73,39 +73,14 @@
 .bazar-list .panel-body .BAZ_fiche_titre {
   display: none;
 }
-.BAZ_fiche_info {
-  font-size: .9em;
-  border: none;
-  box-shadow: none;
-  padding: 0;
-  margin: 0;
+
+.bazar-list .panel .BAZ_fiche_info {
   margin-left: -.9rem;
-  margin-top: 1rem;
-  border-top: 1px dashed var(--neutral-soft-color);
   margin-right: -.9rem;
-  border-radius: 0;
   padding: .9rem;
-  opacity: .8;
-  background-color: transparent;
+  border-top: 1px dashed var(--neutral-soft-color);
 }
-.modal .BAZ_fiche_info {
-  padding-bottom: 0;
-}
-.BAZ_actions_fiche {
-  padding-top: .4rem;
-}
-/*.BAZ_cadre_fiche {
-  padding-top: 1rem;
-}
-.bazar-list .panel .panel-collapse .panel-body::before {
-  background-color: var(--primary-color);
-  height: 2px;
-  opacity: .5;
-  border-radius: 6px;
-  content: "";
-  width: 100%;
-  bottom: 0;
-}*/
+
 .bazar-list .panel-heading[data-toggle=collapse] {
   --chevron-color: var(--neutral-soft-color);
 }

@@ -127,3 +127,23 @@ ul.list-sortables {
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
 }
+
+.BAZ_cadre_fiche .BAZ_fiche_info {
+  font-size: .85rem;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-radius: 0;
+  opacity: .8;
+  background-color: transparent;
+}
+.modal .BAZ_fiche_info {
+  padding-bottom: 0;
+}
+.BAZ_actions_fiche {
+  padding-top: .4rem;
+}
