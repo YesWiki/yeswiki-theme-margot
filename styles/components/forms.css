@@ -20,6 +20,16 @@
 .ace-editor-container, .ace-body {
   background-color: #f9f9f9;
 }
+.note-editor.note-frame .note-editing-area .note-editable {
+  color: var(--main-text-color) !important;
+  padding: 1rem !important;
+}
+.note-editor .panel-heading.note-toolbar {
+  background-color: #f9f9f9;
+}
+.note-editor .panel-heading.note-toolbar .btn i {
+  margin: 0;
+}
 .control-group .controls {
   margin-left: 0 !important;
 }
