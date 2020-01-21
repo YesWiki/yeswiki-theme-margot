@@ -54,6 +54,7 @@ textarea.form-control {
   padding-left: 15px;
   font-size: .8em;
 }
+.form-group:not(.file) .control-label { height: 1.3rem }
 .form-group.textarea.wiki-textarea {
   margin-top: -10px;
 }
