@@ -14,6 +14,10 @@
 .label-primary {
   background-color:var(--primary-color);
 }
+.label-info {
+  background-color:var(--primary-color);
+  opacity: .6;
+}
 .label-success {
   background-color:var(--success-color);
 }
@@ -111,11 +115,11 @@
   background-color: var(--primary-color);
   border-color: var(--primary-color);
 }
-.panel-secondary-1, .panel-warning {
+.panel-secondary-1{
   border-color: var(--secondary-color-1);
   --checkbox-color: var(--secondary-color-1);
 }
-.panel-secondary-1 > .panel-heading, .panel-warning > .panel-heading {
+.panel-secondary-1 > .panel-heading {
   color: var(--neutral-light-color);
   background-color: var(--secondary-color-1);
   border-color: var(--secondary-color-1);
@@ -127,8 +131,46 @@
 .panel-secondary-2 > .panel-heading {
   color: var(--neutral-light-color);
   background-color: var(--secondary-color-2);
-  border-color: var(-secondary-color-2);
+  border-color: var(--secondary-color-2);
 }
+.panel-info {
+  border-color: var(--primary-color);
+  --checkbox-color: var(--primary-color);
+}
+.panel-info > .panel-heading {
+  color: var(--neutral-light-color);
+  background-color: var(--primary-color);
+  opacity: .6;
+  border-color: var(--primary-color);
+}
+.panel-warning {
+  border-color: var(--warning-color);
+  --checkbox-color: var(--warning-color);
+}
+.panel-warning > .panel-heading {
+  color: var(--neutral-light-color);
+  background-color: var(--warning-color);
+  border-color: var(--warning-color);
+}
+.panel-success {
+  border-color: var(--success-color);
+  --checkbox-color: var(--success-color);
+}
+.panel-success > .panel-heading {
+  color: var(--neutral-light-color);
+  background-color: var(--success-color);
+  border-color: var(--success-color);
+}
+.panel-danger {
+  border-color: var(--danger-color);
+  --checkbox-color: var(--danger-color);
+}
+.panel-danger > .panel-heading {
+  color: var(--neutral-light-color);
+  background-color: var(--danger-color);
+  border-color: var(--danger-color);
+}
+
 .panel-heading[data-toggle=collapse] {
   --chevron-color: var(--neutral-light-color);
   position: relative;

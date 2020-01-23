@@ -47,11 +47,22 @@
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:active:focus {
   background-color: var(--primary-color);
 }
-.btn-info, .btn-info:hover, .btn-info:active, .btn-info:focus, .btn-info:active:focus,
+.btn-info, .btn-info:hover, .btn-info:active, .btn-info:focus, .btn-info:active:focus {
+  background: var(--primary-color);
+  opacity: .6;
+}
+.btn-info:hover {
+  opacity: .7;
+}
 .btn-secondary-1, .btn-secondary-1:hover, .btn-secondary-1:active, .btn-secondary-1:focus, .btn-secondary-1:active:focus {
   background: var(--secondary-color-1);
 }
-.btn-warning, .btn-warning:hover, .btn-warning:active, .btn-warning:focus, .btn-warning:active:focus,
+.btn-warning, .btn-warning:hover, .btn-warning:active, .btn-warning:focus, .btn-warning:active:focus {
+  background: var(--warning-color);
+}
+.btn-danger, .btn-danger:hover, .btn-danger:active, .btn-danger:focus, .btn-danger:active:focus {
+  background: var(--danger-color);
+}
 .btn-secondary-2, .btn-secondary-2:hover, .btn-secondary-2:active, .btn-secondary-2:focus, .btn-secondary-2:active:focus {
   background: var(--secondary-color-2);
 }
@@ -65,11 +76,19 @@
 .alert .btn-primary {
   color: var(--primary-color);
 }
-.alert .btn-info,
+.alert .btn-info {
+  color: var(--primary-color);
+  opacity: .5;
+}
 .alert .btn-secondary-1 {
   color: var(--secondary-color-1);
 }
-.alert .btn-warning,
+.alert .btn-warning {
+  color: var(--warning-color);
+}
+.alert .btn-danger {
+  color: var(--danger-color);
+}
 .alert .btn-secondary-2 {
   color: var(--secondary-color-2);
 }
@@ -83,7 +102,7 @@
 }
 .btn-xs.btn-danger {
   background-color: transparent !important;
-  color: #d9534f;
+  color: var(--danger-color);
 }
 .btn-xs.btn-danger:hover {
   background: #eee !important;
