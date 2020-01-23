@@ -1,22 +1,3 @@
-/* Conteneur principal de la page Wiki */
-
-#yw-container {
-  margin: var(--main-container-margin);
-  border-radius: var(--main-container-border-radius);
-  width: var(--main-container-width);
-  box-shadow: var(--main-container-box-shadow);
-}
-
-.page .background-image {
-  position: relative;
-  left: var(--section-background-image-position);
-  right: var(--section-background-image-position);
-  width:var(--section-background-image-width);
-  margin-left: var(--section-background-image-margin);
-  margin-right: var(--section-background-image-margin);
-}
-
-
 /* Partie centrale de la page Wiki */
 #yw-main {
   padding: 1rem;
@@ -32,7 +13,6 @@
 @media (min-width: 1200px) {
   #yw-main { padding: 1.5rem 2rem; }
 }
-
 
 #yw-main .side-bar {
   width: 15rem;
@@ -56,8 +36,17 @@
     margin: 0 !important;
   }
 }
-#yw-main .yw-main-content {
+
+#yw-main .yw-main-content, section.full-width .container {
   width: 100%;
   flex: 1 auto;
+  padding: 0;
   max-width: 1100px;
+  border-radius: none;
+}
+@media (max-width: 1200px) {
+  section.full-width .container { padding: 0 1.5rem; }
+}
+@media (max-width: 800px) {
+  section.full-width .container { padding: 0 1rem; }
 }

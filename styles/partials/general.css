@@ -46,16 +46,6 @@ html, body { /* define also html so we can use rem */
   background-image: none !important;
 }
 
-/* background color of selected text */
-/**::selection {
-   background: var(--primary-color);
-   color: var(--neutral-light-color);
-}
-*::-moz-selection {
-   background: var(--primary-color);
-   color: var(--neutral-light-color);
-}*/
-
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color);

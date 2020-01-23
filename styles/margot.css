@@ -45,18 +45,6 @@
   --main-bg-color:var(--neutral-light-color);
   --main-container-bg-color:var(--neutral-light-color);
 
-
-  /* full width */
-  /* is the following used ? */
-/*  --main-container-margin: 0;
-  --main-container-width: 100%;
-  --main-container-text-width: 100%;
-  --main-container-border-radius: 0;
-  --main-container-box-shadow: none;
-  --section-background-image-width:100vw;
-  --section-background-image-margin:-50vw;
-  --section-background-image-position:50%;*/
-
   /* Links */
   --link-color: var(--primary-color);
   --link-hover-color : var(--primary-color);
