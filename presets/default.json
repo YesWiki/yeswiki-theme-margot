@@ -38,8 +38,8 @@
         {
             "type" : "color",
             "label" : {
-                "fr" : "Couleur neutre sombre",
-                "en" : "Neutral dark color"
+                "fr" : "Couleur du texte",
+                "en" : "Text Color"
             },
             "name" : "neutral-color",
             "value" : "#4E5056"
@@ -47,8 +47,8 @@
         {
             "type" : "color",
             "label" : {
-                "fr" : "Couleur neutre douce",
-                "en" : "Neutral soft color"
+                "fr" : "Couleur bordures",
+                "en" : "Border color"
             },
             "name" : "neutral-soft-color",
             "value" : "#b0b1b3"
@@ -56,20 +56,11 @@
         {
             "type" : "color",
             "label" : {
-                "fr" : "Couleur neutre claire",
-                "en" : "Neutral light color"
+                "fr" : "Couleur de fond",
+                "en" : "Background color"
             },
             "name" : "neutral-light-color",
             "value" : "#ffffff"
-        },
-        {
-            "type" : "color",
-            "label" : {
-                "fr" : "Couleur du texte",
-                "en" : "Text color"
-            },
-            "name" : "main-text-color",
-            "value" : "var(--neutral-color)"
         },
         {
             "type" : "range(1-40)(px)",
@@ -88,15 +79,6 @@
             },
             "name" : "main-text-fontfamily",
             "value" : "'Nunito', sans-serif"
-        },
-        {
-            "type" : "color",
-            "label" : {
-                "fr" : "Couleur de fond de page",
-                "en" : "Background color"
-            },
-            "name" : "main-bg-color",
-            "value" : "var(--neutral-light-color)"
         }
     ]
 }
