@@ -212,11 +212,6 @@
   background-color: var(--primary-color);
 }
 
-.text-info {
-  margin-top: 10px;
-  color: inherit;
-}
-
 /* background color classes*/
 .bg-primary {
   color: var(--neutral-light-color);
@@ -242,10 +237,17 @@
 .bg-secondary-2 h4, .bg-secondary-2 h5,.bg-secondary-2 h6 {
   color: inherit;
 }
--secondary-2 h1, .bg-secondary-2 h2, .bg-secondary-2 h3,
-.bg-secondary-2 h4, .bg-secondary-2 h5,.bg-secondary-2 h6 {
-  color: inherit;
-}
+
+.text-default { color: var(--neutral-color); }
+.text-white { color: var(--neutral-light-color); }
+.text-soft { color: var(--neutral-soft-color); }
+.text-primary { color: var(--primary-color); }
+.text-secondary-1 { color: var(--secondary-color-1); }
+.text-secondary-2 { color: var(--secondary-color-2); }
+.text-success { color: var(--success-color); }
+.text-warning { color: var(--warning-color); }
+.text-danger { color: var(--danger-color); }
+.text-info { color: var(--primary-color); opacity: .6; }
 
 /* LIST GROUP */
 .list-group-item > .label {
