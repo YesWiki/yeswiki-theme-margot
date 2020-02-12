@@ -19,6 +19,7 @@
 @import 'components/tables.css';
 
 @import 'templates/calendar.css';
+@import 'templates/agenda.css';
 @import 'templates/facette.css';
 @import 'templates/accordion.css';
 @import 'templates/search.css';

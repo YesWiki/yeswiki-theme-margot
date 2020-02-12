@@ -1,0 +1,8 @@
+.agenda-entry .date {
+  color: var(--primary-color) !important;
+}
+
+.agenda-entry fig-caption:before {
+  background: var(--primary-color) !important;
+  opacity: .8 !important;
+}
