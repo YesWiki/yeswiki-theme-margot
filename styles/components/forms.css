@@ -282,6 +282,9 @@ form .col-sm-9 {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+.leaflet-container {
+  font: inherit !important;
+}
 .leaflet-control-zoom.leaflet-bar.leaflet-control {
   border:none;
   margin-top: 10px;
@@ -293,6 +296,14 @@ form .col-sm-9 {
   font-size: 18px !important;
   font-weight: normal;
   text-indent: 0;
+}
+.leaflet-control-zoom-fullscreen.fullscreen-icon {
+  background-image: none;
+}
+.leaflet-control-zoom-fullscreen.fullscreen-icon:before {
+  content: "⇱";
+  font-weight: 600;
+  color: var(--neutral-color);
 }
 
 @media (max-width: 800px) {
