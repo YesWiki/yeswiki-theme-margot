@@ -179,7 +179,7 @@ input.form-control[type=file]::before {
   line-height: 2.6rem;
 }
 .input-group {
-  display: flex;
+  display: flex !important;
 }
 .input-group-addon {
   border-radius: 5px 0 0 5px;
@@ -267,6 +267,7 @@ form .col-sm-9 {
 .input-group-addon:last-child, .input-group-btn:last-child > .btn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  height: 2.7rem;
   border: 2px solid var(--primary-color);
   border-left: none;
   padding-bottom: 8px;
