@@ -1,8 +1,13 @@
-.agenda-entry .date {
-  color: var(--primary-color) !important;
+.agenda-container .agenda-entry .date {
+  color: var(--primary-color);
 }
 
-.agenda-entry fig-caption:before {
-  background: var(--primary-color) !important;
-  opacity: .8 !important;
+.agenda-container .agenda-entry fig-caption:before {
+  background: var(--primary-color);
+  opacity: .8;
+}
+
+.agenda-container .agenda-entry {
+  border-radius: 5px 5px 4px 4px;
+  box-shadow: none;
 }
