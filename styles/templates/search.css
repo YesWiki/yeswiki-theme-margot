@@ -11,11 +11,11 @@
 .bazar-search input[type=text] {
   margin-left: 2.7rem;
   border-bottom-left-radius: .9rem !important;
-  background-color: var(--neutral-soft-color);
+  background-color: #e8e8e8;
+  box-shadow: none;
   border: none !important;
   height: 2.4rem;
   padding-left: 1.5rem;
-  /*color: var(--primary-color);*/
 }
 .bazar-search .search-filter select {
   height: 2.4rem;
