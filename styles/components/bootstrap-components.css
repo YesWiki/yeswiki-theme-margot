@@ -211,6 +211,9 @@
   color: var(--neutral-light-color);
   background-color: var(--primary-color);
 }
+.nav-tabs>li>a i {
+  margin-right: 8px;
+}
 
 /* background color classes*/
 .bg-primary {
