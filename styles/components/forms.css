@@ -173,7 +173,8 @@ input.form-control[type=file]::before {
   top: 0;
   font-size: .9em;
   cursor: pointer;
-  padding: 1px .9rem 0 .7rem;
+  width: 142px;
+  text-align: center;
   background-color: var(--primary-color);
   color: var(--neutral-light-color);
   line-height: 2.6rem;
