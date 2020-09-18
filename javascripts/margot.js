@@ -41,7 +41,8 @@ $(document).ready(function() {
   })
   // also when page is loaded in modal
   $(document).on("yw-modal-open", function() {
-    $modal = $("#YesWikiModal")
+    $modal = $("#YesWikiModal");
+    $modal.find('.modal-header h1').remove();
     $modal.find('.modal-header h3').remove();
     var title = $modal.find('.BAZ_fiche_titre');
     var image = $modal.find('[data-id=bf_image]');
@@ -71,13 +72,13 @@ $(document).ready(function() {
     var tooltip = $(this).data("original-title");
     var newImage = $(
       "<span class='form-help fa fa-question-circle' title='" +
-        tooltip +
-        "'></span>"
+      tooltip.replace(/'/g, "&#39;") +
+      "'></span>"
     );
     $(this)
       .parent()
       .append(newImage);
-    // newImage.tooltip();
+     newImage.tooltip();
     $(this).remove();
   });
 
@@ -99,8 +100,9 @@ $(document).ready(function() {
       .prependTo($(this).find(".results-col"));
   });
 
+  /* not usefull for the Jdn YesWiki
   window.onresize = resizeNav;
-  resizeNav();
+  resizeNav();*/
 
   $("#yw-topnav .btn-menu").click(function() {
     $links = $("#yw-topnav .links-container");
@@ -134,12 +136,12 @@ $(document).ready(function() {
     paginationSelect.change(function() {
       var pagination = container.find('.pagination')
       pagination.closest('.dataTables_footer')
-                .toggleClass('no-pagination', pagination.find('li').length <= 3)
+        .toggleClass('no-pagination', pagination.find('li').length <= 3)
     }).trigger('change');
   });
 
   // Annuaire
-  $('.bazar-list[data-template="annuaire_alphabetique.tpl.html"').each(function() {
+  $('.bazar-list[data-template="annuaire_alphabetique.tpl.html"]').each(function() {
     if ($(this).prev().is('h1, h2, h3, h4, h5')) {
       $(this).prev().addClass('annuaire-title')
       $(this).prev().prepend('<i class="fa fa-search fa-flip-horizontal"></i>')
