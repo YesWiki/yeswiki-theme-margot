@@ -33,12 +33,19 @@ $(document).ready(function() {
     parent.addClass("form-control wrapper");
   });
 
-  // move image to be just bellow title
-  $(".BAZ_cadre_fiche").each(function() {
+  // specific for LMS : move image to be just below title
+  $(".BAZ_cadre_fiche:not(:has(.lms-container))").each(function() {
     var title = $(this).find('.BAZ_fiche_titre');
     var image = $(this).find('[data-id=bf_image]');
     $(this).prepend(image).prepend(title);
-  })
+  });
+  $(".BAZ_cadre_fiche.id5002 .lms-module-content").each(function(){
+    var title = $(this).find('.BAZ_fiche_titre');
+    var image = $(this).find('[data-id=bf_image]');
+    image.insertAfter(title);
+  });
+
+
   // also when page is loaded in modal
   $(document).on("yw-modal-open", function() {
     $modal = $("#YesWikiModal");
@@ -149,9 +156,38 @@ $(document).ready(function() {
   })
 });
 
+/* specific for jdn profiles */
+$('.BAZ_cadre_fiche div[data-id="bf_url_photo"]').each(function(){
+  var url = $(this).find('.BAZ_texte').text();
+  $('.BAZ_cadre_fiche div[data-id="bf_url_photo"]').detach();
+  if (typeof url !== 'undefined') {
+    $('.BAZ_cadre_fiche').prepend('<a data-id="bf_image" class="modalbox left" href="' + url
+      + '"><img src="' + url + '" style="width: 300px;"></a>');
+  }
+});
+
+/* not usefull for the Jdn YesWiki
 function resizeNav() {
   // console.log("resizeNav", $("#yw-topnav").outerHeight());
   var navHeight = $("#yw-topnav").outerHeight();
   $("#yw-header").css("margin-top", navHeight + "px");
   $("<style type='text/css'>.nav-down ~ #yw-main #ACEditor .btn-toolbar { top: " + navHeight + "px } </style>").appendTo("head");
+}*/
+/* for LMS extension used in JdN wikis
+   if the page is included in an iframe, go to the top of the page when a modal is displayed */
+// cf https://stackoverflow.com/questions/47249935/scroll-window-to-top-of-iframe-from-iframe-with-different-domain-than-parent
+var scrollPage = (function(){
+  var input = document.createElement("input");
+  input.style.position="absolute";
+  input.style.top="-50px";
+  document.body.insertBefore(input, document.body.firstChild);
+  return function(){
+    input.focus();
+  };
+})();
+var body = $('html, body');
+if (body.hasClass('yeswiki-iframe-body')){
+  $(window).on('shown.bs.modal', function () {
+    scrollPage();
+  });
 }
