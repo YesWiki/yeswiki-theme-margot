@@ -38,7 +38,7 @@ $(document).ready(function() {
     $modal = $("#YesWikiModal");
     $modal.find('.modal-header h1').remove();
     $modal.find('.modal-header h3').remove();
-    var title = $modal.find('.BAZ_fiche_titre');
+    var title = $modal.find('.BAZ_fiche_titre:first');
     var image = $modal.find('[data-id=bf_image]');
     $modal.find('.modal-header').prepend(title)
     $modal.find(".BAZ_cadre_fiche").prepend(image);
