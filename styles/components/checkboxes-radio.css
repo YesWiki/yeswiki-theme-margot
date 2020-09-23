@@ -13,6 +13,13 @@
   opacity: 0;
   pointer-events: none;
 }
+/* but not for checkbox for diff menu*/
+form[action$="diff"]>table>tbody>tr>td>input[type="checkbox"]:not(:checked), 
+form[action$="diff"]>table>tbody>tr>td>input[type="checkbox"]:checked {
+    position: initial;
+    opacity: 1;
+    pointer-events: initial;
+}
 
 [type="checkbox"] + span:not(.lever) {
   position: relative;
@@ -124,6 +131,13 @@ table.dataTable [type="checkbox"] + span:not(.lever):after {
   position: absolute;
   opacity: 0;
   pointer-events: none;
+}
+/* but not for radio buttons in diff menu*/
+form[action$="diff"]>table>tbody>tr>td>input[type="radio"]:not(:checked), 
+form[action$="diff"]>table>tbody>tr>td>input[type="radio"]:checked {
+    position: initial;
+    opacity: 1;
+    pointer-events: initial;
 }
 
 [type="radio"]:not(:checked) + span:not(.lever),
