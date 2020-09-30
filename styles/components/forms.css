@@ -354,9 +354,7 @@ form .col-sm-9 {
 .inline-container [type="radio"]:checked + span:not(.lever) {
   margin-right: -5px;
 }
-<<<<<<< HEAD
-=======
+
 .help-block {
   font-size: .8em;
 }
->>>>>>> 97c6e9a... smaller help
