@@ -42,21 +42,32 @@ $(document).ready(function() {
     var image = $modal.find('[data-id=bf_image]');
     $modal.find('.modal-header').prepend(title)
     $modal.find(".BAZ_cadre_fiche").prepend(image);
-    $modal.find('.modal-body').prepend("<div class='separator'></div>")
+    $modal.find('.modal-body').prepend("<div class='separator'></div>");
+	// ajout du span pour les checkbox/radio oubliés
+	$("#YesWikiModal input[type='checkbox'], #YesWikiModal input[type='radio']").each(function(){updateSpanInput(this)})
   });
 
   // ajout du span pour les checkbox/radio oubliés
-  $(":checkbox, :radio").each(function() {
+  $("input[type='checkbox'],input[type='radio']").each(function(){updateSpanInput(this)});
+  
+  function updateSpanInput(element) {
     if (
-      $(this)
+      $(element)
         .next()
         .not("span")
     ) {
-      if ($(this).parents(".switch").length==0) {
-        $(this).after("<span></span>");
+      if ($(element).parents(".switch").length==0) {
+		if ($(element).parent("td").length > 0){
+          $(element).after("<label class=" + $(element).attr('type') + "></label>");
+		  var label_elem = $(element).next() ;
+		  label_elem.append(element);
+		  label_elem.append("<span></span>");
+	    } else {
+		  $(element).after("<span></span>");
+		}
       }
     }
-  });
+  };
   // hack pour la ferme a wiki dont l'input hidden cachait le reste
   $("#bf_dossier-wiki")
     .parents(".control-group.email.password")
@@ -67,7 +78,7 @@ $(document).ready(function() {
     var newImage = $(
       "<span class='form-help fa fa-question-circle' title='" +
       tooltip.replace(/'/g, "&#39;") +
-      "'></span>"
+      "' onclick=\"$(this).tooltip(\'toggle\')\"></span>"
     );
     $(this)
       .parent()

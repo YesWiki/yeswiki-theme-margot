@@ -117,3 +117,38 @@ ul {
 .background-image {
   padding: 1rem 0;
 }
+/* To prevent display trouble on small screen */
+@media (max-width: 400px){
+    a {
+        word-break: break-word;
+    }
+}
+
+/* Icon compatibility ; not fontawesome*/
+:not(.fa):not(.fa-trash).icon-trash::before {
+    content: "\e020";
+}
+:not(.fa):not(.fa-eye-open).icon-eye-open::before {
+
+    content: "\e105";
+
+}
+:not(.fa):not(.fa-tags).icon-tags::before {
+    content: "\e042";
+}
+:not(.fa).icon-white, :not(.fa).icon, :not(.fa).icon-pencil, :not(.fa).icon-tags, :not(.fa).icon-trash {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
+/* Font Awesome */
+.fa-eye-open::before{
+    content: "\f06e";
+}
+.fa-remove::before {
+    content: "\f00d";
+}
