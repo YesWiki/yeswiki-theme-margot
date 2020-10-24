@@ -112,7 +112,7 @@ ul {
   color: var(--secondary-color-2);
 }
 .label {
-  padding: .2em .5em 1px .5em !important;
+  padding: .1em .5em !important;
 }
 .background-image {
   padding: 1rem 0;

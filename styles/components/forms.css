@@ -17,6 +17,9 @@
   border-radius: 3px !important;
   background-color: #f9f9f9;
 }
+select.form-control {
+  padding: 0 1em 0 .8em;
+}
 .ace-editor-container, .ace-body {
   background-color: #f9f9f9;
 }
@@ -52,7 +55,8 @@ textarea.form-control {
   width: auto !important;
   font-weight: 600;
   padding-left: 15px;
-  font-size: 1em;
+  font-size: 14px;
+  margin: 0;
 }
 .form-group:not(.file) .control-label {
   height: auto;
@@ -71,6 +75,9 @@ textarea.form-control {
   background-color: var(--neutral-light-color);
   padding: 0 4px 0 8px;
   bottom: calc(100% - 10px);
+}
+.form-group.wrapper.checkbox .control-label, .form-group.wrapper.radio .control-label {
+  bottom: calc(100% - 8px);
 }
 .form-group:not(.file):not(.checkbox) .control-label {
   margin-left: 8px;
@@ -99,7 +106,7 @@ textarea.form-control {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 9px;
+  height: 10px;
   z-index: -1;
 }
 /*.form-group.checkbox:not(.wrapper) .control-label {
@@ -357,4 +364,8 @@ form .col-sm-9 {
 
 .help-block {
   font-size: .8em;
+}
+
+.form-group.wrapper .checkbox, .form-group.wrapper .radio {
+  padding-top: 5px;
 }

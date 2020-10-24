@@ -32,6 +32,9 @@ $(document).ready(function() {
     var parent = $(this).closest(".form-group");
     parent.addClass("form-control wrapper");
   });
+  $('.bazar-radio').each(function() {
+    $(this).closest('.wrapper').addClass('radio')
+  })
 
   // also when page is loaded in modal
   $(document).on("yw-modal-open", function() {
