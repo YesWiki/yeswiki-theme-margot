@@ -48,6 +48,11 @@ $(document).ready(function() {
     $modal.find('.modal-body').prepend("<div class='separator'></div>");
 	// ajout du span pour les checkbox/radio oubliés
 	$("#YesWikiModal input[type='checkbox'], #YesWikiModal input[type='radio']").each(function(){updateSpanInput(this)})
+	// Modification des boutons pour retourner dans l'historique
+	$("#YesWikiModal input.btn[onclick*='history.back()']").each(function (){
+		$(this).attr('data-dismiss','modal') ;
+		$(this).removeAttr('onclick') ;
+	}) ;
   });
 
   // ajout du span pour les checkbox/radio oubliés
