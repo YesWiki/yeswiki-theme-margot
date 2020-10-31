@@ -203,7 +203,10 @@ input.form-control[type=file]::before {
   line-height: 2.6rem;
 }
 .input-group {
-  display: flex !important;
+  display: flex ;
+}
+.input-group.hide {
+  display: none ;
 }
 .input-group-addon {
   border-radius: 5px 0 0 5px;
