@@ -136,7 +136,7 @@ ul {
 :not(.fa):not(.fa-tags).icon-tags::before {
     content: "\e042";
 }
-:not(.fa).icon-white, :not(.fa).icon, :not(.fa).icon-pencil, :not(.fa).icon-tags, :not(.fa).icon-trash {
+:not(.fa).icon-white, :not(.fa):not(.form-group).icon, :not(.fa).icon-pencil, :not(.fa).icon-tags, :not(.fa).icon-trash {
     position: relative;
     top: 1px;
     display: inline-block;
