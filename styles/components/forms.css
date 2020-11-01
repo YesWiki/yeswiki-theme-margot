@@ -205,6 +205,9 @@ input.form-control[type=file]::before {
 .input-group {
   display: flex !important;
 }
+.input-group.hide {
+  display: none !important;
+}
 .input-group-addon {
   border-radius: 5px 0 0 5px;
   line-height: 2.7rem;
