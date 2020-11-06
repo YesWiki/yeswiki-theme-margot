@@ -1,5 +1,6 @@
 {
       "name": "yeswiki/theme-margot",
+      "license": "AGPL-3.0",
       "type": "yeswiki-theme",
       "require": {
            "composer/installers": "~1.0"
