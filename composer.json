@@ -1,0 +1,7 @@
+{
+      "name": "yeswiki/theme-margot",
+      "type": "yeswiki-theme",
+      "extra": {
+           "installer-name": "margot"
+      }
+}
