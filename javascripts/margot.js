@@ -61,8 +61,8 @@ $(document).ready(function() {
   function updateSpanInput(element) {
     if (
       $(element)
-        .next()
-        .not("span")
+        .next().length == 0 ||
+        $(element).next().not("span").length > 0
     ) {
       if ($(element).parents(".switch").length==0) {
 		if ($(element).parent("td").length > 0){
