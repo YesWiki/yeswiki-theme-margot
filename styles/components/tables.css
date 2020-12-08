@@ -20,13 +20,15 @@
 #add-entry-table th:last-child { width: 245px !important; }
 
 @media screen and (max-width: 800px) {
-  .table-responsive { border:none !important };
+  .table-responsive { border:none !important; }
 }
 
 .table-condensed thead tr > th, .table-condensed thead tr > td {
   padding-top: .5em !important;
   padding-bottom: .5em !important;
 }
+
+/* Datatables */
 
 table.dataTable.table-condensed .sorting:after,
 table.dataTable.table-condensed .sorting_asc:after,
@@ -37,8 +39,9 @@ table.dataTable.table-condensed .sorting_desc:after  {
 table.dataTable .prevent-sorting:after {
   display: none !important;
 }
-
-/* Datatbles */
+table.dataTable td>select {
+  width: 200px !important;
+}
 
 /* Header */
 .dataTables_header {
