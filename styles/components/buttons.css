@@ -139,8 +139,8 @@
 }
 
 .btn-group-sm > .btn, .btn-sm {
-  padding: 2px 7px;
-  font-size: .8rem;
+  padding: 5px 10px;
+  font-size: .9rem;
 }
 
 .btn-group-lg > .btn, .btn-lg {
