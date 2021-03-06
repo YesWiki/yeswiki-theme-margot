@@ -39,11 +39,16 @@ $(document).ready(function() {
   // also when page is loaded in modal
   $(document).on("yw-modal-open", function() {
     $modal = $("#YesWikiModal");
-    $modal.find('.modal-header h1').remove();
-    $modal.find('.modal-header h3').remove();
     var title = $modal.find('.BAZ_fiche_titre:first');
+    if (title.length == 0){
+      title = $modal.find('.modal-body h1,.modal-body h3').first();
+    }
+    if (title.length > 0){
+      $modal.find('.modal-header h1').remove();
+      $modal.find('.modal-header h3').remove();
+      $modal.find('.modal-header').prepend(title);
+    }
     var image = $modal.find('[data-id=bf_image]');
-    $modal.find('.modal-header').prepend(title)
     $modal.find(".BAZ_cadre_fiche").prepend(image);
     $modal.find('.modal-body').prepend("<div class='separator'></div>");
 	// ajout du span pour les checkbox/radio oubliés
