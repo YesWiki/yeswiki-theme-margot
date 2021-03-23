@@ -51,13 +51,30 @@ $(document).ready(function() {
     var image = $modal.find('[data-id=bf_image]');
     $modal.find(".BAZ_cadre_fiche").prepend(image);
     $modal.find('.modal-body').prepend("<div class='separator'></div>");
-	// ajout du span pour les checkbox/radio oubliés
-	$("#YesWikiModal input[type='checkbox'], #YesWikiModal input[type='radio']").each(function(){updateSpanInput(this)})
-	// Modification des boutons pour retourner dans l'historique
-	$("#YesWikiModal input.btn[onclick*='history.back()']").each(function (){
-		$(this).attr('data-dismiss','modal') ;
-		$(this).removeAttr('onclick') ;
-	}) ;
+    // ajout du span pour les checkbox/radio oubliés
+    $("#YesWikiModal input[type='checkbox'], #YesWikiModal input[type='radio']").each(function(){updateSpanInput(this)})
+    // Modification des boutons pour retourner dans l'historique
+    $("#YesWikiModal input.btn[onclick*='history.back()']").each(function (){
+      $(this).attr('data-dismiss','modal') ;
+      $(this).removeAttr('onclick') ;
+    }) ;
+    $("#YesWikiModal .tooltip_aide").each(function(){addTooltip(this)});
+    $("#YesWikiModal .bazar-list .panel-collapse")
+    .on("hide.bs.collapse", function() {
+      $(this)
+        .parent()
+        .addClass("collapsed");
+    })
+    .on("show.bs.collapse", function() {
+      $(this)
+        .parent()
+        .removeClass("collapsed");
+    });
+    $("#YesWikiModal #search-form + .facette-container").each(function() {
+      $(this)
+        .siblings("#search-form")
+        .prependTo($(this).find(".results-col"));
+    });
   });
 
   // ajout du span pour les checkbox/radio oubliés
@@ -86,19 +103,20 @@ $(document).ready(function() {
     .parents(".control-group.email.password")
     .removeClass("hidden");
 
-  $(".tooltip_aide").each(function() {
-    var tooltip = $(this).data("original-title");
+  $(".tooltip_aide").each(function(){addTooltip(this)});
+  function addTooltip(element) {
+    var tooltip = $(element).data("original-title") ?? ($(element).attr("title") ?? '');
     var newImage = $(
       "<span class='form-help fa fa-question-circle' title='" +
       tooltip.replace(/'/g, "&#39;") +
-      "' onclick=\"$(this).tooltip(\'toggle\')\"></span>"
+      "' onclick=\"$(element).tooltip(\'toggle\')\"></span>"
     );
-    $(this)
+    $(element)
       .parent()
       .append(newImage);
      newImage.tooltip();
-    $(this).remove();
-  });
+    $(element).remove();
+  };
 
   $(".bazar-list .panel-collapse")
     .on("hide.bs.collapse", function() {
