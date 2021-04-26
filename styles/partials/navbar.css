@@ -48,7 +48,7 @@
   }
   #yw-topnav .links-container .nav {
     flex-direction: column;
-    background-color: var(--primary-color);
+    background-color: var(--navbar-bg-color);
     border-radius: .3em;
     margin: 0 1rem;
     padding: .8rem 1.5rem;
@@ -65,7 +65,7 @@
   #yw-topnav .links-container .nav a {
     line-height: 2.5rem;
     display: inline;
-    background-color: var(--primary-color) !important;
+    background-color: var(--navbar-bg-color) !important;
   }
 
   #yw-topnav .navbar-header {
@@ -200,7 +200,7 @@
 
 /* Couleur navbar */
 .navbar-default {
-   background-color: var(--primary-color);
+   background-color: var(--navbar-bg-color);
    color: var(--navbar-text-color);
    border: var(--navbar-border);
    box-shadow: var(--navbar-shadow);
@@ -210,7 +210,7 @@
    background-color: var(--navbar-link-bg-color) !important;
 }
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a:hover {
-   color: var(--navbar-link-hover-color-color) !important;
+   color: var(--navbar-link-hover-color) !important;
    background-color: var(--navbar-link-bg-hover-color) !important;
 }
 
