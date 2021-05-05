@@ -173,6 +173,9 @@ $(document).ready(function() {
       pagination.closest('.dataTables_footer')
         .toggleClass('no-pagination', pagination.find('li').length <= 3)
     }).trigger('change');
+    
+    // remove ugly style of dt-button :)
+    $(this).find('.dt-button').removeClass('dt-button')    
   });
 
   // Annuaire
