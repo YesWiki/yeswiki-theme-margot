@@ -105,7 +105,7 @@ $(document).ready(function() {
 
   $(".tooltip_aide").each(function(){addTooltip(this)});
   function addTooltip(element) {
-    var tooltip = $(element).data("original-title") ?? ($(element).attr("title") ?? '');
+    var tooltip = $(element).data("original-title") || ($(element).attr("title") || '');
     var newImage = $(
       "<span class='form-help fa fa-question-circle' title='" +
       tooltip.replace(/'/g, "&#39;") +
