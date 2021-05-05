@@ -44,15 +44,9 @@ td > label.checkbox, td > label.radio {
   border: 2px solid var(--checkbox-color);
   border-radius: 3px;
   opacity: .9;
-  margin-top: 3px;
+  margin-top: 2px;
   -webkit-transition: .2s;
   transition: .2s;
-  margin-top: 8px;
-}
-
-table.dataTable [type="checkbox"] + span:not(.lever):before,
-table.dataTable [type="checkbox"] + span:not(.lever):after {
-  margin-top: 2px;
 }
 
 [type="checkbox"]:not(:checked) + span:not(.lever):after {
@@ -132,11 +126,11 @@ table.dataTable [type="checkbox"] + span:not(.lever):after {
 [type="radio"]:not(:checked) + span:not(.lever),
 [type="radio"]:checked + span:not(.lever) {
   position: relative;
-  padding-left: 35px;
+  padding-left: 2rem;
   cursor: pointer;
   display: inline-block;
-  height: 25px;
-  line-height: 25px;
+  height: 1.4rem;
+  line-height: 1.4rem;
   font-size: 1rem;
   -webkit-transition: .28s ease;
   transition: .28s ease;
@@ -155,10 +149,9 @@ table.dataTable [type="checkbox"] + span:not(.lever):after {
   position: absolute;
   left: 0;
   top: 0;
-  margin: 4px;
-  width: 16px;
-  height: 16px;
-  margin-top: 10px;
+  width: 1rem;
+  height: 1rem;
+  margin: 2px 0 0 0;
   z-index: 0;
   -webkit-transition: .28s ease;
   transition: .28s ease;
