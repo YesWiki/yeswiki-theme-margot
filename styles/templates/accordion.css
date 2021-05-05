@@ -2,7 +2,7 @@
   border: none;
   background-color:transparent;
   transition: border .3s, margin .3s;
-  padding: 0 .9rem;
+  padding: 0;
   border: .3rem solid transparent;
   box-shadow: none;
 }
@@ -28,6 +28,7 @@
   border-color: var(--primary-color);
   border-radius: .5em;
   margin-top: .6rem !important;
+  padding: 0 .9rem;
 }
 .bazar-list .panel:not(.collapsed) .panel-heading {
   border: none !important;
