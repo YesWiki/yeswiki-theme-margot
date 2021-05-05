@@ -1,7 +1,7 @@
 .bazar-list .panel.panel-default {
   border: none;
   background-color:transparent;
-  transition: border .3s, margin .3s;
+  transition: border .3s, margin .3s, padding .3s;
   padding: 0;
   border: .3rem solid transparent;
   box-shadow: none;

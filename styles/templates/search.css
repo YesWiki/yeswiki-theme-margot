@@ -29,6 +29,8 @@
   background-color: var(--primary-color) !important;
   color: var(--neutral-light-color);
   height: 2.4rem;
+  line-height: 2.4rem;
+  padding: 0 1rem;
   border-top-right-radius: .5em !important;
   border-bottom-right-radius: .5em !important;
 }
