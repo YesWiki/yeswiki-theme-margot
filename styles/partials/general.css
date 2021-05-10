@@ -48,6 +48,7 @@ html, body { /* define also html so we can use rem */
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--main-title-fontfamily);
   color: var(--primary-color);
   margin-bottom: .5em;
   margin-top: .5em;

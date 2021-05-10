@@ -43,6 +43,7 @@
   --main-text-color:var(--neutral-color);
   --main-text-fontsize: 17px;
   --main-text-fontfamily:'Nunito', sans-serif;
+  --main-title-fontfamily:'Nunito', sans-serif;
   --main-bg-color:var(--neutral-light-color);
   --main-container-bg-color:var(--neutral-light-color);
 

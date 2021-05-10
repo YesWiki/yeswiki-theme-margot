@@ -186,6 +186,7 @@
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
+  font-family: var(--main-title-fontfamily);
 }
 .navbar-brand img {
   max-height: 2.9rem;
