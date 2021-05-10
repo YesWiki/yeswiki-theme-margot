@@ -33,6 +33,10 @@
 .label-secondary-2 {
   background-color:var(--secondary-color-2);
 }
+/* tag label in leaflet */
+.leaflet-container a.tag-label {
+  color: var(--neutral-light-color);
+}
 
 .alert-default, .alert-info {
   border: none;
