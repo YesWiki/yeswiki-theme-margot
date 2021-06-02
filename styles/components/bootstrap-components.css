@@ -43,6 +43,7 @@
   position: relative;
   background-color: transparent !important;
   color:var(--neutral-color) !important;
+  z-index: 0;
 }
 .alert-default:before, .alert-info:before {
   content: " ";
@@ -53,6 +54,7 @@
   bottom: 0;
   border-radius: .3rem;
   opacity: .3;
+  z-index: -1;
 }
 .alert-default:before {
   background-color: var(--neutral-color);
