@@ -24,6 +24,9 @@
 .btn:not(.btn-icon) i {
   margin-right: 8px;
 }
+.btn.btn-sm:not(.btn-icon) i {
+  margin-right: 3px;
+}
 
 .btn-link:hover, .btn-link:focus {
   color: var(--primary-color);
