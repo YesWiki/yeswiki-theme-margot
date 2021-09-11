@@ -58,12 +58,13 @@
 .bazar-list .panel-title {
   font-size: 1rem;
   transition: all .3s;
+  padding-right: 2.2rem;
 }
 .bazar-list .BAZ_label {
   color: var(--neutral-color);
   font-weight: bold !important;
   margin: 0;
-  font-size: 1rem;
+  font-size: inherit;
 }
 .bazar-list .panel:not(.collapsed) .panel-title {
   color: var(--primary-color);
@@ -82,6 +83,8 @@
   border-top: 1px dashed var(--neutral-soft-color);
 }
 
+
+
 .bazar-list .panel-heading[data-toggle=collapse] {
   --chevron-color: var(--neutral-soft-color);
 }
@@ -90,16 +93,17 @@
 }
 .bazar-list .panel-heading[data-toggle=collapse]:after {
   transition: border-color .2s;
-  top: 2em;
+  top: 2rem;
   right: .5em;
 }
 .bazar-list .panel-heading.collapsed[data-toggle=collapse]:after {
-  top: 1.4em;
+  top: 1.4rem;
 }
 .bazar-list .panel .panel-heading:hover .icon-chevron,
 .bazar-list .panel .panel-heading:hover .panel-title {
   color: var(--primary-color);
 }
+
 .accordion-template-container {
   margin: -.6rem -.6rem -.6rem 0;
 }
@@ -121,4 +125,12 @@
     top: 1.2rem;
   }
   .BAZ_fiche_info .btn-mini > span { display: none; }
+}
+
+/* List Dynamic */
+.bazar-list.dynamic .panel:not(.collapsed) .panel-title {
+  margin-bottom: 0;
+}
+.bazar-list.dynamic .panel-heading:not(.collapsed)[data-toggle=collapse]:after {
+  top: 1.8rem;
 }

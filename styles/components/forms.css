@@ -61,9 +61,6 @@ textarea.form-control {
 .form-group:not(.file) .control-label {
   height: auto;
 }
-.form-group.textarea.wiki-textarea {
-  margin-top: -10px;
-}
 .form-group.textarea.summernote {
   padding: 0;
 }
@@ -163,7 +160,7 @@ textarea.form-control {
   margin-top: -10px;
 }
 .form-group.input {
-  margin-top: 2.2rem;
+  margin-top: 1.8rem;
 }
 .form-control.wrapper {
   height: auto;
@@ -196,7 +193,7 @@ input.form-control[type=file]::before {
   top: 0;
   font-size: .9em;
   cursor: pointer;
-  width: 142px;
+  width: 143px;
   text-align: center;
   background-color: var(--primary-color);
   color: var(--neutral-light-color);
@@ -217,6 +214,8 @@ input.form-control[type=file]::before {
   background-color: var(--primary-color);
   color: var(--neutral-light-color);
   border: none;
+  display: flex;
+  align-items: center;
 }
 a.input-group-addon:hover {
   color: var(--neutral-light-color);
@@ -257,12 +256,11 @@ a.input-group-addon:hover {
 }
 input[type=file] ~ output {
   padding: 0;
-  margin-top: 10px;
-  border-radius: 5px;
-  width: 200px;
 }
 input[type=file] ~ output img {
   border-radius: 3px;
+  height: 150px;
+  margin-top: 10px;
 }
 form {
   position: relative;
@@ -319,22 +317,22 @@ form .col-sm-9 {
 .leaflet-container {
   font: inherit !important;
 }
-.leaflet-control-zoom.leaflet-bar.leaflet-control {
+.leaflet-control-container .leaflet-bar.leaflet-control {
   border:none;
   margin-top: 10px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.3);
   background-color: var(--neutral-light-color);
 }
-.leaflet-control-zoom.leaflet-bar.leaflet-control a {
+.leaflet-control-container .leaflet-bar.leaflet-control a {
   color: var(--primary-color);
   font-size: 18px !important;
   font-weight: normal;
   text-indent: 0;
 }
-.leaflet-control-zoom-fullscreen.fullscreen-icon {
+.leaflet-control-container .leaflet-control-zoom-fullscreen.fullscreen-icon {
   background-image: none;
 }
-.leaflet-control-zoom-fullscreen.fullscreen-icon:before {
+.leaflet-control-container .leaflet-control-zoom-fullscreen.fullscreen-icon:before {
   content: "⇱";
   font-weight: 600;
   color: var(--neutral-color);

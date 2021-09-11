@@ -39,7 +39,7 @@
 html, body { /* define also html so we can use rem */
   background: var(--main-bg-color);
   color: var(--main-text-color);
-  font-size: var(--main-text-fontsize);
+  font-size: var(--main-text-fontsize) !important;
   font-family: var(--main-text-fontfamily);
   padding: 0 !important;
   line-height: 1.6;
