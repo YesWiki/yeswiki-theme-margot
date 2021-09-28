@@ -22,10 +22,10 @@
   color: var(--primary-color);
 }
 .btn:not(.btn-icon) i {
-  margin-right: 8px;
+  margin-right: .5rem;
 }
 .btn.btn-sm:not(.btn-icon) i {
-  margin-right: 3px;
+  margin-right: .3rem;
 }
 
 .btn-link:hover, .btn-link:focus {

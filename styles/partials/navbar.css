@@ -113,7 +113,7 @@
   }
 }
 #yw-topnav .dropdown-menu a {
-  padding: 2px 20px 6px 15px;
+  padding: 6px 20px 6px 15px;
   color:var(--navbar-link-color);
   font-weight: 600;
 }

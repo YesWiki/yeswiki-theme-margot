@@ -31,6 +31,9 @@ td > label.checkbox, td > label.radio {
           user-select: none;
   transition: font-weight .3s, color .3s;
 }
+.filter-box [type="checkbox"] + span:not(.lever) {
+  padding-left: 1.6rem;
+}
 
 [type="checkbox"] + span:not(.lever):before,
 [type="checkbox"] + span:not(.lever):after {
