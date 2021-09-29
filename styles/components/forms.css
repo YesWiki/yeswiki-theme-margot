@@ -314,27 +314,16 @@ form .col-sm-9 {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-.leaflet-container {
-  font: inherit !important;
-}
+
 .leaflet-control-container .leaflet-bar.leaflet-control {
-  border:none;
-  margin-top: 10px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  
   background-color: var(--neutral-light-color);
 }
 .leaflet-control-container .leaflet-bar.leaflet-control a {
   color: var(--primary-color);
-  font-size: 18px !important;
-  font-weight: normal;
-  text-indent: 0;
 }
-.leaflet-control-container .leaflet-control-zoom-fullscreen.fullscreen-icon {
-  background-image: none;
-}
+
 .leaflet-control-container .leaflet-control-zoom-fullscreen.fullscreen-icon:before {
-  content: "⇱";
-  font-weight: 600;
   color: var(--neutral-color);
 }
 
