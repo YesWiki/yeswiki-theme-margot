@@ -292,6 +292,7 @@
   background-color: transparent;
   border: none;
   color: var(--neutral-light-color) !important;
+  background-color: var(--neutral-color) !important;
   font-size: 5rem;
   top: -1.4rem;
   padding: 0 2rem;
@@ -311,8 +312,7 @@
   font-size: 1.8rem;
 }
 @media (max-width: 800px) {
-  #search .yeswiki-search-form { margin-left: 1.9rem !important; }
-  #search .btn.close-search { padding-right: .9rem; }
+  #search .btn.close-search { right: -5px; }
 }
 
 /* ----------------- */
