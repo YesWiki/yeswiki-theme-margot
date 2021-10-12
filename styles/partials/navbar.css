@@ -211,7 +211,7 @@
   background: var(--navbar-link-color) !important;
   color: var(--navbar-bg-color) !important;
 }
-#yw-topnav .btn:not(.btn-default) {
+#yw-topnav .btn:not(.btn-default):not(.btn-link) {
   color: var(--neutral-light-color);
 }
 #yw-topnav .btn.btn-primary,
