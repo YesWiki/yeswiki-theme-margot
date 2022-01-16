@@ -30,10 +30,7 @@
 #yw-topnav.fixable.nav-up, .yw-responsive #yw-topnav.fixable.nav-up {
   top: -80px;
 }
-/* on decalle le contenu vers le bas pour eviter un saut */
-#yw-topnav:not(.affix) + #yw-header {
-  margin-top: 0 !important;
-}
+
 
 /* ----------------- */
 /*      Brand        */

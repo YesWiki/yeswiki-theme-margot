@@ -188,8 +188,6 @@ $(document).ready(function() {
 });
 
 function resizeNav() {
-  // console.log("resizeNav", $("#yw-topnav").outerHeight());
   var navHeight = $("#yw-topnav").outerHeight();
-  $("#yw-header").css("margin-top", navHeight + "px");
   $("<style type='text/css'>.nav-down ~ #yw-main #ACEditor .btn-toolbar { top: " + navHeight + "px } </style>").appendTo("head");
 }

@@ -6,11 +6,11 @@ var ywnavbar = $('#yw-topnav');
 var navbarHeight = ywnavbar.outerHeight();
 var minOffsetForHiding = 300;
 
-$(window).scroll(function(event) {
+$(window).scroll(function (event) {
   didScroll = true;
 });
 
-setInterval(function() {
+setInterval(function () {
   if (didScroll) {
     hasScrolled();
     didScroll = false;
@@ -23,9 +23,9 @@ function hasScrolled() {
   if (Math.abs(lastScrollTop - st) <= scrolldelta)
     return;
 
-  // If they scrolled down and are past the navbar, add class .nav-up.
+  // If they scrolled down and are past the navbar, add class .nav - up.
   // This is necessary so you never see what is "behind" the navbar.
-  if (st > lastScrollTop && st > navbarHeight && ywnavbar.hasClass('affix') && st > minOffsetForHiding) {
+  if (st > lastScrollTop && st > navbarHeight && ywnavbar.hasClass('fixable') && st > minOffsetForHiding) {
     // Scroll Down
     ywnavbar.addClass('nav-up');
     ywnavbar.removeClass('nav-down');
