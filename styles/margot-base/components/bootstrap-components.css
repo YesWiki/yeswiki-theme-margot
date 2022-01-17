@@ -6,6 +6,9 @@
   padding: 1rem 1.75rem;
   border-radius: .5rem;
 }
+section h1, section h2, section h3 {
+  color: var(--neutral-color);
+}
 section .well {
   background-color: var(--main-bg-color);
   margin: 1rem 0;

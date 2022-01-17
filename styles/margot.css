@@ -29,24 +29,13 @@
  * CSS variables
  */
 :root {
-  --primary-color: #1A89A0;
-  /* initial yellow #F8C400; */
-  --secondary-color-1: #d8604c;
-  --secondary-color-2: #D78958;
-  --neutral-color: #4E5056;
-  --neutral-soft-color: #b0b1b3;
-  --neutral-light-color: #ffffff;
-
   --success-color: #3cab3b;
   --danger-color: #d8604c;
   --warning-color: #D78958;
 
   --main-text-color: var(--neutral-color);
-  --main-text-fontsize: 17px;
-  --main-text-fontfamily: 'Nunito', sans-serif;
-  --main-title-fontfamily: 'Nunito', sans-serif;
-  --main-bg-color: var(--neutral-light-color);
-  --main-container-bg-color: var(--neutral-light-color);
+  --main-bg-color: white;
+  --main-container-bg-color: white;
 
   /* Links */
   --link-color: var(--primary-color);
@@ -54,8 +43,8 @@
 
   /* contained page */
   --navbar-bg-color: var(--primary-color);
-  --navbar-text-color: var(--neutral-light-color);
-  --navbar-link-color: var(--neutral-light-color);
+  --navbar-text-color: white;
+  --navbar-link-color: white;
   --navbar-link-bg-color: transparent;
   --navbar-link-hover-color: rgba(255, 255, 255, 0.85);
   --navbar-link-bg-hover-color: transparent;
@@ -64,7 +53,7 @@
   --navbar-shadow: none;
 
 
-  --header-bg-color: var(--neutral-light-color);
+  --header-bg-color: white;
   --header-text-color: var(--neutral-color);
   --header-title-color: var(--primary-color);
 
