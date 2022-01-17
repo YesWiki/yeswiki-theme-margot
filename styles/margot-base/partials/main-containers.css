@@ -3,6 +3,7 @@
   padding: 1rem;
   position: relative;
   min-height: 400px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;

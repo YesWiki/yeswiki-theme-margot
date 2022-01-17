@@ -1,0 +1,7 @@
+.btn {
+  color: var(--neutral-color) !important;
+}
+
+.btn.btn-neutral {
+  background-color: var(--neutral-soft-color);
+}

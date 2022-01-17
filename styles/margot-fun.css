@@ -21,29 +21,24 @@
 @import 'margot-base/templates/search.css';
 @import 'margot-base/templates/annuaire.css';
 
-:root {
-  --primary-color: #1A89A0;
-  --secondary-color-1: #d8604c;
-  --secondary-color-2: #D78958;
-  --neutral-color: #4E5056;
-  --neutral-soft-color: #b0b1b3;
-  --neutral-light-color: #ffffff;
+@import 'margot-fun/general.css';
+@import 'margot-fun/header.css';
 
+:root {
   --success-color: #3cab3b;
   --danger-color: #d8604c;
   --warning-color: #D78958;
 
   --main-text-color: var(--neutral-color);
-  --main-text-fontsize: 17px;
-  --main-bg-color: var(--neutral-light-color);
-  --main-container-bg-color: var(--neutral-light-color);
+  --main-bg-color: white;
+  --main-container-bg-color: white;
 
   /* Links */
   --link-color: var(--primary-color);
   --link-hover-color: var(--primary-color);
 
   /* contained page */
-  --navbar-bg-color: var(--neutral-soft-color);
+  --navbar-bg-color: var(--neutral-light-color);
   --navbar-text-color: var(--neutral-color);
   --navbar-link-color: var(--neutral-color);
   --navbar-link-bg-color: transparent;
@@ -54,11 +49,11 @@
   --navbar-shadow: none;
 
 
-  --header-bg-color: var(--neutral-soft-color);
+  --header-bg-color: var(--neutral-light-color);
   --header-text-color: var(--neutral-color);
   --header-title-color: var(--neutral-color);
 
-  --footer-bg-color: var(--neutral-soft-color);
+  --footer-bg-color: var(--neutral-light-color);
   --footer-text-color: var(--main-text-color);
   --footer-title-color: var(--main-text-color);
   --footer-border-top: 3px solid var(--neutral-soft-color);
