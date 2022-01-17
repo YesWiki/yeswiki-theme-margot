@@ -9,14 +9,35 @@
 section h1, section h2, section h3 {
   color: var(--neutral-color);
 }
+@media (max-width: 1200px) {
+  section.full-width .container { padding: 0 1.5rem; }
+}
+@media (max-width: 800px) {
+  section.full-width .container { padding: 0 1rem; }
+}
+section.with-bg-pattern .container {
+  background-color: var(--main-bg-color);
+  border-radius: .5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem 2.5rem;
+}
+@media (max-width: 900px) {
+  section.with-bg-pattern .container {
+    padding: 1rem;
+  }
+}
+section.with-bg-pattern:not(.full-width) .container {
+  margin: 1rem 2rem;
+}
 section .well {
   background-color: var(--main-bg-color);
   margin: 1rem 0;
   padding: 2rem 2.5rem;
 }
-section .well h1:first-child,
-section .well h2:first-child,
-section .well h3:first-child {
+section .well h1:first-child, section.with-bg-pattern h1:first-child,
+section .well h2:first-child, section.with-bg-pattern h2:first-child,
+section .well h3:first-child, section.with-bg-pattern h3:first-child {
   margin-top: 0;
 }
 
