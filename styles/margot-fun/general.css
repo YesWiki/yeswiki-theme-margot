@@ -1,9 +1,35 @@
-.btn {
-  color: var(--neutral-color) !important;
-}
 
-.btn.btn-neutral {
-  background-color: var(--neutral-soft-color);
+
+h1 {
+  background-color: var(--secondary-color-1);
+  border-radius: 2rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 5.5rem 2rem 4.5rem;
+  position: relative;
+}
+h1:before {
+  content: "";
+  height: 4.8rem;
+  width: 1.6rem;
+  position: absolute;
+  left: -3.5rem;
+  border-radius: .8rem;
+  bottom: -.5rem;
+  transform: rotate(30deg);
+  background-color: var(--secondary-color-2);
+}
+h1:after {
+  content: "";
+  padding: .6rem;
+  position: absolute;
+  right: -5.5rem;
+  border-radius: 2.2rem;
+  background-color: transparent;
+  border: 1.4rem solid var(--primary-color);
 }
 
 /* with margot fun, primary and seconry are light, so we need to write with netraul instead of neutral-light */
@@ -31,11 +57,7 @@
 h1, h3, h4, h5, h6 {
   color: var(--neutral-color) !important;
 }
-.well {
-  border: none;
-  box-shadow: none;
-  padding: 1rem 1.75rem;
-}
+
 .bazar-card .floating-area .date,
 .bazar-card .floating-area .text {
   color: var(--neutral-color) !important;
@@ -71,3 +93,19 @@ input.form-control[type=file]::before {
 .bazar-list .panel-heading[data-toggle=collapse] {
   background-color: var(--main-bg-color);
 }
+.btn {
+  color: var(--neutral-color) !important;
+}
+.btn.btn-neutral {
+  background-color: var(--neutral-light-color);
+}
+section h2 {
+  color: var(--neutral-color);
+}
+.ace-body {
+  --primary-color: #2196f3;
+  --secondary-color-1: #a93612;
+}
+.ace-body .ace_comment {
+  opacity: .7;
+} 
