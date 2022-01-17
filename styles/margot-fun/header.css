@@ -52,8 +52,8 @@
 #yw-topnav .navbar-nav > li:hover {
   background-color: var(--neutral-color);
 }
-#yw-topnav .navbar-nav > li:hover > a,
-#yw-topnav .navbar-nav > li:hover > a:hover {
+#yw-topnav .navbar-nav > li:hover > a:not(.btn),
+#yw-topnav .navbar-nav > li:hover > a:not(.btn):hover {
   color: var(--primary-color) !important;
 }
 #yw-topnav .navbar-nav > li > a {
@@ -111,7 +111,6 @@
 }
 #yw-topnav .dropdown-menu li.divider {
   padding: 0;
-  opacity: .8;
   border-width: 2px;
   margin: 0 .5rem .5rem .5rem;
   border-color: var(--neutral-color);
