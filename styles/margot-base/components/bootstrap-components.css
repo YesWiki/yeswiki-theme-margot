@@ -1,7 +1,20 @@
 /* Composants */
 .well {
-  border:3px solid var(--secondary-color-2);
+  border: none;
+  box-shadow: none;
   background:var(--neutral-light-color);
+  padding: 1rem 1.75rem;
+  border-radius: .5rem;
+}
+section .well {
+  background-color: var(--main-bg-color);
+  margin: 1rem 0;
+  padding: 2rem 2.5rem;
+}
+section .well h1:first-child,
+section .well h2:first-child,
+section .well h3:first-child {
+  margin-top: 0;
 }
 
 .label {
