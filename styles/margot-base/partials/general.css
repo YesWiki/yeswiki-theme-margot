@@ -140,10 +140,6 @@ ul {
   padding: .1em .5em !important;
 }
 
-.background-image {
-  padding: 1rem 0;
-}
-
 /* To prevent display trouble on small screen */
 @media (max-width: 400px) {
   a {

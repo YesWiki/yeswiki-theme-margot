@@ -1,13 +1,9 @@
 /* Composants */
 .well {
-  border: none;
-  box-shadow: none;
-  background:var(--neutral-light-color);
+  border: 3px solid var(--primary-color);
+  background-color: var(--main-bg-color);
   padding: 1rem 1.75rem;
   border-radius: .5rem;
-}
-section h1, section h2, section h3 {
-  color: var(--neutral-color);
 }
 @media (max-width: 1200px) {
   section.full-width .container { padding: 0 1.5rem; }
@@ -30,17 +26,15 @@ section.with-bg-pattern .container {
 section.with-bg-pattern:not(.full-width) .container {
   margin: 1rem 2rem;
 }
+.yw-headerpage section.with-bg-pattern:not(.full-width) .container {
+  margin: 1rem auto !important;
+}
 section .well {
   background-color: var(--main-bg-color);
+  border: none;
   margin: 1rem 0;
   padding: 2rem 2.5rem;
 }
-section .well h1:first-child, section h1:first-child,
-section .well h2:first-child, section h2:first-child,
-section .well h3:first-child, section h3:first-child {
-  margin-top: 0;
-}
-
 .label {
   padding: .2em .5em;
   vertical-align: middle;
