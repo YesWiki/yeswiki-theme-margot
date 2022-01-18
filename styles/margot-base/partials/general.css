@@ -120,6 +120,9 @@ a.yeswiki-editable .icon-edit {
   font-size: .8rem;
   margin-left: 2px;
 }
+.dropdown-menu {
+  font-size: inherit;
+}
 
 pre {
   color: inherit;

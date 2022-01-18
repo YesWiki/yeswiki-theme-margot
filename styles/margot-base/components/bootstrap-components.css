@@ -35,9 +35,9 @@ section .well {
   margin: 1rem 0;
   padding: 2rem 2.5rem;
 }
-section .well h1:first-child, section.with-bg-pattern h1:first-child,
-section .well h2:first-child, section.with-bg-pattern h2:first-child,
-section .well h3:first-child, section.with-bg-pattern h3:first-child {
+section .well h1:first-child, section h1:first-child,
+section .well h2:first-child, section h2:first-child,
+section .well h3:first-child, section h3:first-child {
   margin-top: 0;
 }
 
