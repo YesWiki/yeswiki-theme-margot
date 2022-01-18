@@ -200,6 +200,9 @@ input.form-control[type=file]::before {
   line-height: 2.6rem;
 }
 .input-group {
+  display: flex;
+}
+.input-group:not(.form-group) {
   display: flex !important;
 }
 .input-group.hide {
