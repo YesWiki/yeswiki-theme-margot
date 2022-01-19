@@ -139,7 +139,8 @@
   flex-wrap: wrap;
 }
 #yw-topnav .navbar-brand, 
-#yw-topnav .navbar-nav > li > a:not(.btn) {
+#yw-topnav .navbar-nav > li > a:not(.btn),
+#yw-topnav .navbar-nav > li > a.btn-link {
   color: var(--navbar-link-color) !important;
   background-color: transparent !important;
 }
