@@ -73,6 +73,10 @@ textarea.form-control {
   padding: 0 4px 0 8px;
   bottom: calc(100% - 10px);
 }
+form#form-modal-upload .form-group:not(.file):not(.checkbox) .control-label,
+form#form-modal-upload .form-group.wrapper.checkbox .control-label {
+  background-color: white;
+}
 .form-group.wrapper.checkbox .control-label, .form-group.wrapper.radio .control-label {
   bottom: calc(100% - 8px);
 }
