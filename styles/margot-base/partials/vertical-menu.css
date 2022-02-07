@@ -1,0 +1,32 @@
+.yeswiki-vertical-menu #yw-topnav {
+  padding: 0 0 2rem 0;
+}
+.yeswiki-vertical-menu #yw-topnav .container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.yeswiki-vertical-menu #yw-topnav .nav {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem 0;
+  width: 100%;
+}
+.yeswiki-vertical-menu #yw-topnav .navbar-header {
+  padding: 1rem;
+  text-align: center;
+}
+.yeswiki-vertical-menu #yw-topnav .navbar-header .navbar-brand {
+  margin: 0;
+  padding: 1rem;
+}
+.yeswiki-vertical-menu #yw-topnav .dropdown-menu {
+  position: relative;
+  top: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+.yeswiki-vertical-menu #yw-topnav.in-header {
+  display: none;
+}

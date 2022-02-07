@@ -1,0 +1,95 @@
+.yeswiki-vertical-menu {
+  --menu-width: 250px;
+  --container-space: 3rem;
+}
+
+.yeswiki-vertical-menu #yw-container {
+  margin-left: var(--menu-width);
+  padding-left: var(--container-space); /* some extra space for topnav */
+}
+.yeswiki-vertical-menu #yw-footer {
+  margin-left: calc(-1 * var(--container-space));
+}
+
+
+/* PAGE HEADER */
+.yeswiki-vertical-menu #yw-header {
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  width: var(--menu-width);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 5;
+}
+.yeswiki-vertical-menu #yw-header .yw-headerpage,
+.yeswiki-vertical-menu #yw-header .yw-headerpage section {
+  height: 100%;
+}
+.yeswiki-vertical-menu #yw-header .yw-headerpage section[data-file="bandeau.png"] {
+  background-image: url(../../images/bandeau_fun_vertical.svg) !important;
+  background-position: left top;
+  background-repeat: repeat;
+  background-size: contain;
+}
+.yeswiki-vertical-menu #yw-header #yw-topnav {
+  position: absolute;
+  display: flex;
+  height: auto;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  transform: translateY(100%) scale(.8);
+  transform-origin: top;
+}
+
+/* TOP NAV */
+.yeswiki-vertical-menu #yw-topnav {
+  position: fixed;
+  left: var(--menu-width);
+  height: 100vh;
+  overflow: visible;
+}
+.yeswiki-vertical-menu #yw-topnav .container {
+  flex-direction: column;
+  padding: 0;
+}
+.yeswiki-vertical-menu #yw-topnav:not(.in-header) .container .navbar-nav {
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+.yeswiki-vertical-menu #yw-topnav:not(.in-header) .navbar-nav > li {
+  writing-mode: vertical-lr;
+  transform: scale(-1);
+  border-radius: 1rem 0 0 1rem;
+  margin-bottom: .75rem;
+  margin-right: 0;
+}
+.yeswiki-vertical-menu #yw-topnav:not(.in-header) .navbar-nav > li > a {
+  margin: 0 !important;
+  padding: 1rem !important;
+}
+.yeswiki-vertical-menu #yw-topnav:not(.in-header) .navbar-nav > li > a.btn:not(.btn-icon) i {
+  margin: 0;
+  margin-bottom: .5rem;
+}
+.yeswiki-vertical-menu #yw-topnav:not(.in-header) .navbar-nav > li > a.btn {
+  border-radius: 1rem 0 0 1rem !important;
+}
+.yeswiki-vertical-menu #yw-topnav:not(.in-header) .navbar-nav > li > a .caret {
+  float: left;
+  margin-bottom: .5rem;
+  transform: rotateZ(90deg);
+  border-width: 5px;
+}
+.yeswiki-vertical-menu #yw-topnav:not(.in-header) .dropdown-menu {
+  writing-mode: horizontal-tb;
+  transform: scale(-1) translateX(calc(100% + 1rem));
+  padding: 0;
+  bottom: 0;
+}
+.yeswiki-vertical-menu #yw-topnav:not(.in-header) .yw-topnav-fast-access {
+  display: none;
+}
+

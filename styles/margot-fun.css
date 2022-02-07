@@ -23,6 +23,7 @@
 
 @import 'margot-fun/general.css';
 @import 'margot-fun/header.css';
+@import 'margot-fun/vertical-menu.css';
 
 :root {
   --success-color: #a0d95d;

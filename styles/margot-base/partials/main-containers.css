@@ -120,3 +120,31 @@ body[data-full-page] {
   height: calc(100vh - 4rem);
   overflow: auto;
 }
+
+/* VERTICAL MENU SQUELETTE */
+.yeswiki-vertical-menu {
+  height: 100vh;
+  display: flex;
+}
+.yeswiki-vertical-menu .main-content {
+  height: 100vh;
+  flex-grow: 1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.yeswiki-vertical-menu #yw-topnav {
+  overflow: hidden;
+}
+/* Fix full width sections */
+@media (max-width: 1430px) {
+  .yeswiki-vertical-menu .full-width {
+    width: calc(100% + 4rem) !important;
+    left: -2rem;
+    right: -2rem;
+    margin: 0;
+  }
+  .yeswiki-vertical-menu .full-width .container {
+    margin-left: 2rem;
+    padding: 0 !important;
+  }
+}
