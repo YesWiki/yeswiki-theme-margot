@@ -1,47 +1,222 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 26.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1920 200" style="enable-background:new 0 0 1920 200;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#10335D;}
-	.st1{fill:#F0C431;}
-	.st2{fill:none;stroke:#F0C431;stroke-width:40;stroke-linecap:round;}
-	.st3{fill:none;stroke:#F09989;stroke-width:40;stroke-linecap:round;}
-	.st4{fill:none;}
-	.st5{fill:none;stroke:#87D2E8;stroke-width:40;}
-	.st6{fill:none;stroke:#F09989;stroke-width:40;}
-	.st7{fill:none;stroke:#EBD1B2;stroke-width:40;stroke-linecap:round;}
-	.st8{fill:none;stroke:#10335D;stroke-width:40;stroke-linecap:round;}
-	.st9{fill:#DEF2FA;}
-	.st10{fill:#EBD1B2;}
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Calque_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 1920 200"
+   style="enable-background:new 0 0 1920 200;"
+   xml:space="preserve"
+   sodipodi:docname="bandeau_fun.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
+   id="metadata42"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs40" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1043"
+   id="namedview38"
+   showgrid="false"
+   inkscape:zoom="0.44895833"
+   inkscape:cx="817.14888"
+   inkscape:cy="70.865037"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Calque_1" />
+<style
+   type="text/css"
+   id="style2">
+	.st0{fill:#10335D; opacity: .5;}
+	.st1{fill:#F0C431; opacity: .5;}
+	.st2{fill:none;stroke:#F0C431;stroke-width:40;stroke-linecap:round; opacity: .5;}
+	.st3{fill:none;stroke:#F09989;stroke-width:40;stroke-linecap:round; opacity: .5;}
+	.st4{fill:none; opacity: .5;}
+	.st5{fill:none;stroke:#87D2E8;stroke-width:40; opacity: .5;}
+	.st6{fill:none;stroke:#F09989;stroke-width:40; opacity: .5;}
+	.st7{fill:none;stroke:#EBD1B2;stroke-width:40;stroke-linecap:round; opacity: .5;}
+	.st8{fill:none;stroke:#10335D;stroke-width:40;stroke-linecap:round; opacity: .5;}
+	.st9{fill:#DEF2FA; opacity: .5;}
+	.st10{fill:#EBD1B2; opacity: .5;}
 </style>
-<circle id="Ellipse_3" class="st0" cx="76.2" cy="33" r="66.5"/>
-<circle id="Ellipse_9" class="st1" cx="1693.2" cy="53" r="66.5"/>
-<line id="Ligne_3" class="st2" x1="463.2" y1="209.5" x2="569.2" y2="134.5"/>
-<line id="Ligne_1" class="st3" x1="110.6" y1="161.9" x2="241.6" y2="76.9"/>
-<line id="Ligne_1_1_" class="st3" x1="1395.6" y1="28.9" x2="1526.6" y2="-56.1"/>
-<line id="Ligne_5" class="st3" x1="959.8" y1="152.5" x2="1090.8" y2="67.5"/>
-<g id="Ellipse_4" transform="translate(236 209)">
-	<circle class="st4" cx="89.2" cy="-37" r="61.5"/>
-	<circle class="st5" cx="89.2" cy="-37" r="41.5"/>
+
+<circle
+   id="Ellipse_9"
+   class="st1"
+   cx="1693.2"
+   cy="53"
+   r="66.5" />
+<line
+   id="Ligne_3"
+   class="st2"
+   x1="463.2"
+   y1="209.5"
+   x2="569.2"
+   y2="134.5" />
+<line
+   id="Ligne_1"
+   class="st3"
+   x1="110.6"
+   y1="161.9"
+   x2="241.6"
+   y2="76.9" />
+<line
+   id="Ligne_1_1_"
+   class="st3"
+   x1="1395.6"
+   y1="28.9"
+   x2="1526.6"
+   y2="-56.1" />
+<line
+   id="Ligne_5"
+   class="st3"
+   x1="959.8"
+   y1="152.5"
+   x2="1090.8"
+   y2="67.5" />
+<g
+   id="Ellipse_4"
+   transform="translate(236 209)">
+	<circle
+   class="st4"
+   cx="89.2"
+   cy="-37"
+   r="61.5"
+   id="circle10" />
+	<circle
+   class="st5"
+   cx="89.2"
+   cy="-37"
+   r="41.5"
+   id="circle12" />
 </g>
-<g id="Ellipse_8" transform="translate(1330 185)">
-	<circle class="st4" cx="89.2" cy="-37" r="61.5"/>
-	<circle class="st5" cx="89.2" cy="-37" r="41.5"/>
+<g
+   id="Ellipse_8"
+   transform="translate(1330 185)">
+	<circle
+   class="st4"
+   cx="89.2"
+   cy="-37"
+   r="61.5"
+   id="circle15" />
+	<circle
+   class="st5"
+   cx="89.2"
+   cy="-37"
+   r="41.5"
+   id="circle17" />
 </g>
-<g id="Ellipse_6" transform="translate(618 132)">
-	<circle class="st4" cx="69.2" cy="-37" r="61.5"/>
-	<circle class="st6" cx="69.2" cy="-37" r="41.5"/>
+<g
+   id="Ellipse_6"
+   transform="translate(618 132)">
+	<circle
+   class="st4"
+   cx="69.2"
+   cy="-37"
+   r="61.5"
+   id="circle20" />
+	<circle
+   class="st6"
+   cx="69.2"
+   cy="-37"
+   r="41.5"
+   id="circle22" />
 </g>
-<g id="Ellipse_10" transform="translate(1816 201)">
-	<circle class="st4" cx="21.2" cy="-37" r="61.5"/>
-	<circle class="st6" cx="21.2" cy="-37" r="41.5"/>
+<g
+   id="Ellipse_10"
+   transform="translate(1816 201)">
+	<circle
+   class="st4"
+   cx="21.2"
+   cy="-37"
+   r="61.5"
+   id="circle25" />
+	<circle
+   class="st6"
+   cx="21.2"
+   cy="-37"
+   r="41.5"
+   id="circle27" />
 </g>
-<line id="Ligne_2" class="st7" x1="374.3" y1="71.5" x2="300.3" y2="-5.5"/>
-<line id="Ligne_8" class="st7" x1="1612.2" y1="179.5" x2="1538.2" y2="102.5"/>
-<line id="Ligne_6" class="st2" x1="1267.3" y1="71.5" x2="1193.3" y2="-5.5"/>
-<line id="Ligne_4" class="st8" x1="890.2" y1="212.8" x2="816.2" y2="135.8"/>
-<line id="Ligne_7" class="st8" x1="1251.3" y1="211.5" x2="1177.3" y2="134.5"/>
-<circle id="Ellipse_5" class="st9" cx="510.8" cy="30.5" r="58"/>
-<circle id="Ellipse_7" class="st10" cx="899.8" cy="24.5" r="58"/>
-</svg>
+<line
+   id="Ligne_2"
+   class="st7"
+   x1="374.3"
+   y1="71.5"
+   x2="300.3"
+   y2="-5.5" />
+<line
+   id="Ligne_8"
+   class="st7"
+   x1="1612.2"
+   y1="179.5"
+   x2="1538.2"
+   y2="102.5" />
+<line
+   id="Ligne_6"
+   class="st2"
+   x1="1267.3"
+   y1="71.5"
+   x2="1193.3"
+   y2="-5.5" />
+<line
+   id="Ligne_4"
+   class="st8"
+   x1="890.2"
+   y1="212.8"
+   x2="816.2"
+   y2="135.8"
+   style="opacity:0.25" />
+<line
+   id="Ligne_7"
+   class="st8"
+   x1="1251.3"
+   y1="211.5"
+   x2="1177.3"
+   y2="134.5"
+   style="opacity:0.25" />
+<circle
+   id="Ellipse_5"
+   class="st9"
+   cx="510.8"
+   cy="30.5"
+   r="58" />
+<circle
+   id="Ellipse_7"
+   class="st10"
+   cx="899.8"
+   cy="24.5"
+   r="58" />
+<g
+   id="Ellipse_6-3"
+   transform="translate(13.667755,63.71926)"
+   style="stroke:#10335d;stroke-opacity:1;opacity:0.34"><circle
+     class="st4"
+     cx="69.199997"
+     cy="-37"
+     r="61.5"
+     id="circle20-6"
+     style="opacity:0.5;fill:none;stroke:#10335d;stroke-opacity:1" /><circle
+     class="st6"
+     cx="69.199997"
+     cy="-37"
+     r="41.5"
+     id="circle22-7"
+     style="opacity:0.5;fill:none;stroke:#10335d;stroke-width:40;stroke-opacity:1" /></g></svg>

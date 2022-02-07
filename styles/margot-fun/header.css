@@ -3,26 +3,46 @@
   flex-direction: column;
 }
 #yw-header {
-  background-image: url(../../images/bandeau_fun.svg);
   order: -1;
   display: flex;
   align-items: stretch;
-  min-height: 6rem;
 }
 #yw-header .yw-headerpage {
-  background: #f0e7dc7a;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   flex-grow: 1;
-  padding: 0 2rem;
 }
 #yw-header .yw-headerpage section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+#yw-header .yw-headerpage section .container {
+  padding: 1rem;
+  width: 100% !important;
+}
+/*  Replace default background image */
+#yw-header .yw-headerpage section[data-file="bandeau.png"] {
+  background-image: url(../../images/bandeau_fun.svg) !important;
+  color: var(--neutral-color) !important;
+  background-color: var(--neutral-light-color) !important;
+}
+#yw-header .yw-headerpage section[data-file="bandeau.png"] h1,
+#yw-header .yw-headerpage section[data-file="bandeau.png"] h2 {
+  color: var(--neutral-color) !important;
+}
+#yw-header .yw-headerpage section h1 {
+  margin: 0 0 1rem 0;
+  background-color: transparent;
+}
+#yw-header .yw-headerpage section h1:before {
+  display: none;
+}
+#yw-header .yw-headerpage section h1:after {
+  display: none;
 }
 #yw-header .navbar-header {
   display: flex;
