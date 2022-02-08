@@ -111,7 +111,13 @@
     flex: 1;
     text-align: center
   }
-  #yw-topnav .navbar-header .navbar-brand { width: 100%; }
+  #yw-topnav .navbar-header .navbar-brand { 
+    width: 100%; 
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   #yw-topnav .btn .fa { font-size: 1.5rem !important; }
 

@@ -27,6 +27,7 @@
 @media (max-width: 800px) {
   #yw-main {
     flex-direction: column;
+    overflow-x: hidden;
   }
   .page, .menupage, .rightcolumnpage {
     min-height: 0;
@@ -122,18 +123,20 @@ body[data-full-page] {
 }
 
 /* VERTICAL MENU SQUELETTE */
-.yeswiki-vertical-menu {
-  height: 100vh;
-  display: flex;
-}
-.yeswiki-vertical-menu .main-content {
-  height: 100vh;
-  flex-grow: 1;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-.yeswiki-vertical-menu #yw-topnav {
-  overflow: hidden;
+@media (min-width: 801px) {
+  .yeswiki-vertical-menu {
+    height: 100vh;
+    display: flex;
+  }
+  .yeswiki-vertical-menu .main-content {
+    height: 100vh;
+    flex-grow: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .yeswiki-vertical-menu #yw-topnav {
+    overflow: hidden;
+  }
 }
 /* Fix full width sections */
 @media (max-width: 1430px) {
@@ -145,6 +148,5 @@ body[data-full-page] {
   }
   .yeswiki-vertical-menu .full-width .container {
     margin-left: 2rem;
-    padding: 0 !important;
   }
 }

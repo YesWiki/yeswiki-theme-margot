@@ -4,10 +4,11 @@ h1 {
   background-color: var(--secondary-color-1);
   border-radius: 2rem;
   height: 4rem;
-  font-size: 1.6rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin: 1rem 5.5rem 2rem 4.5rem;
   position: relative;
 }
@@ -32,7 +33,13 @@ h1:after {
   border: 1.4rem solid var(--primary-color);
 }
 
-/* with margot fun, primary and seconry are light, so we need to write with netraul instead of neutral-light */
+@media (max-width: 800px) {
+  h1 {
+    font-size: 1.5rem;
+    margin: 1rem 3rem 2rem 2rem;
+  }
+}
+/* with margot fun, primary and seconry are light, so we need to write with neutral instead of neutral-light */
 .label {
   color: var(--neutral-color) !important;
   padding: .2rem .5rem .1rem .5rem !important;
@@ -64,6 +71,9 @@ h1, h3, h4, h5, h6 {
 }
 .bazar-card .title-area + .subtitle-area {
   font-weight: bold !important;
+}
+.bazar-card .floating-area .field-default {
+  color: var(--neutral-color) !important;
 }
 .results-container .filter-box:nth-of-type(2),
 .results-container .filter-box:nth-of-type(5) {

@@ -48,6 +48,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: var(--neutral-light-color);
 }
 #yw-header .navbar-header a {
@@ -75,16 +76,18 @@
   margin: 0 !important;
   font-weight: 600;
 }
-#yw-topnav .navbar-nav > li:hover,
-#yw-topnav .navbar-nav > li.open {
-  background-color: var(--neutral-color);
-}
-#yw-topnav .navbar-nav > li:hover > a:not(.btn),
-#yw-topnav .navbar-nav > li.open > a:not(.btn),
-#yw-topnav .navbar-nav > li:hover > a.btn-link,
-#yw-topnav .navbar-nav > li.open > a.btn-link {
-  color: var(--primary-color) !important;
-  transition: none;
+@media (min-width: 801px) {
+  #yw-topnav .navbar-nav > li:hover,
+  #yw-topnav .navbar-nav > li.open {
+    background-color: var(--neutral-color);
+  }
+  #yw-topnav .navbar-nav > li:hover > a:not(.btn),
+  #yw-topnav .navbar-nav > li.open > a:not(.btn),
+  #yw-topnav .navbar-nav > li:hover > a.btn-link,
+  #yw-topnav .navbar-nav > li.open > a.btn-link {
+    color: var(--primary-color) !important;
+    transition: none;
+  }
 }
 #yw-topnav .navbar-nav > li > a {
   padding: 1rem 1.5rem !important;
@@ -118,6 +121,7 @@
 #yw-topnav .yw-topnav-fast-access .btn[href="#search"] {
   font-size: 1.8rem;
   width: 4.5rem;
+  background: none !important;
 }
 #yw-topnav .yw-topnav-fast-access .btn[href="#search"]:before {
   background-image: url(../../images/btn-cog.svg);
@@ -151,4 +155,54 @@
 #yw-topnav .dropdown-menu li:hover a,
 #yw-topnav .dropdown-menu li:hover a:hover {
   color: white !important;
+}
+
+@media (max-width: 800px) {
+  #yw-header {
+    flex-wrap: wrap;
+  }
+  #yw-header .navbar-header {
+    width: 100%;
+  }
+  #yw-topnav .container {
+    justify-content: center;
+  }
+  #yw-topnav .btn.btn-menu.btn-default {
+    background: var(--primary-color) !important;
+    border-radius: 50%;
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-top: 0;
+    top: -.3rem;
+    margin-right: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #yw-topnav .btn.btn-menu.btn-default:before {
+    content: " ";
+  }
+  #yw-topnav .links-container .nav {
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+  }
+  #yw-topnav .navbar-nav > li {
+    box-shadow: none;
+  }
+  #yw-topnav .navbar-nav > li .btn {
+    border-radius: .5rem;
+  }
+  #yw-topnav .links-container .nav a:not(.btn) {
+    background: none !important;
+  }
+  #yw-topnav .yw-topnav-fast-access .btn.btn-default,
+  #yw-topnav .yw-topnav-fast-access .btn.btn-default:hover {
+    background: none !important;
+  }
+  #yw-topnav .links-container .nav li:before {
+    content: none;
+  }
+  #yw-topnav .btn .fa {
+    font-size: 1.8rem !important;
+  }
 }

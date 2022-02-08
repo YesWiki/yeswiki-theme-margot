@@ -1,32 +1,53 @@
-.yeswiki-vertical-menu #yw-topnav {
-  padding: 0 0 2rem 0;
-}
-.yeswiki-vertical-menu #yw-topnav .container {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-}
-.yeswiki-vertical-menu #yw-topnav .nav {
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 1rem 0;
-  width: 100%;
-}
-.yeswiki-vertical-menu #yw-topnav .navbar-header {
-  padding: 1rem;
-  text-align: center;
-}
-.yeswiki-vertical-menu #yw-topnav .navbar-header .navbar-brand {
-  margin: 0;
-  padding: 1rem;
-}
-.yeswiki-vertical-menu #yw-topnav .dropdown-menu {
-  position: relative;
-  top: 0;
-  margin: 0;
-  text-align: center;
-  width: 100%;
-}
-.yeswiki-vertical-menu #yw-topnav.in-header {
-  display: none;
+@media (min-width: 801px) {
+  .yeswiki-vertical-menu #yw-topnav {
+    padding: 0 0 2rem 0;
+  }
+  .yeswiki-vertical-menu #yw-topnav .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .yeswiki-vertical-menu #yw-topnav .nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  .yeswiki-vertical-menu #yw-topnav .navbar-header {
+    padding: 1rem;
+    text-align: center;
+  }
+  .yeswiki-vertical-menu #yw-topnav .navbar-header .navbar-brand {
+    margin: 0;
+    padding: 1rem;
+  }
+  .yeswiki-vertical-menu #yw-topnav .include.links-container .dropdown-menu {
+    position: relative;
+    top: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .yeswiki-vertical-menu #yw-topnav.in-header {
+    display: none;
+  }
+  .yeswiki-vertical-menu #yw-topnav .yw-topnav-fast-access .dropdown-menu {
+    bottom: 100%;
+    top: unset;
+    left: -125px;
+    right: 0;
+    width: 250px;
+  }
+  .yeswiki-vertical-menu #yw-topnav .links-container {
+    width: 100%;
+  }
+  .yeswiki-vertical-menu #yw-topnav .links-container li {
+    width: 100%;
+    text-align: center;
+    padding: .25rem 0;
+  }
+  .yeswiki-vertical-menu #yw-topnav .links-container ul {
+    /* border-top: 1px solid var(--neutral-light-color); */
+    margin-top: 1rem;
+  }
 }
