@@ -7,5 +7,10 @@
       },
       "extra": {
            "installer-name": "margot"
+      },
+      "config": {
+            "allow-plugins": {
+                  "composer/installers": true
+            }
       }
 }
