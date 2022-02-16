@@ -27,7 +27,7 @@
 @media (max-width: 800px) {
   #yw-main {
     flex-direction: column;
-    overflow-x: hidden;
+    overflow-x: auto;
   }
   .page, .menupage, .rightcolumnpage {
     min-height: 0;
