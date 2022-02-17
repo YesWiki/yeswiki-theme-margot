@@ -36,7 +36,10 @@ h1:after {
 @media (max-width: 800px) {
   h1 {
     font-size: 1.5rem;
-    margin: 1rem 3rem 2rem 2rem;
+    margin: 1rem 0 2rem 2rem;
+  }
+  h1:after {
+    content: none;
   }
 }
 /* with margot fun, primary and seconry are light, so we need to write with neutral instead of neutral-light */

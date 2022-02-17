@@ -141,9 +141,12 @@ ul {
 }
 
 /* To prevent display trouble on small screen */
-@media (max-width: 400px) {
-  a {
+@media (max-width: 800px) {
+  * {
     word-break: break-word;
+  }
+  img, video, iframe {
+    max-width: 100% !important;
   }
 }
 

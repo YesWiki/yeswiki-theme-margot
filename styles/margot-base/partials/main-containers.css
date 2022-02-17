@@ -1,18 +1,19 @@
 /* Partie centrale de la page Wiki */
 #yw-main {
-  padding: 1rem;
+  --padding-x: 1rem;
+  padding: var(--padding-x);
   position: relative;
   min-height: 400px;
   width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: center;  
 }
 @media (min-width: 992px) {
-  #yw-main { padding: 1.5rem; }
+  #yw-main { --padding-x: 1.5rem; }
 }
 @media (min-width: 1200px) {
-  #yw-main { padding: 1.5rem 2rem; }
+  #yw-main { --padding-x: 2rem; padding: 1.5rem var(--padding-x); }
 }
 
 #yw-main .side-bar {
@@ -141,12 +142,13 @@ body[data-full-page] {
 /* Fix full width sections */
 @media (max-width: 1430px) {
   .yeswiki-vertical-menu .full-width {
-    width: calc(100% + 4rem) !important;
-    left: -2rem;
-    right: -2rem;
+    width: calc(100% + 2 * var(--padding-x)) !important;
+    left: calc(-1 * var(--padding-x));
+    right: calc(-1 * var(--padding-x));
     margin: 0;
   }
-  .yeswiki-vertical-menu .full-width .container {
-    margin-left: 2rem;
+  .yeswiki-vertical-menu .full-width.with-bg-pattern .container {
+    margin-left: var(--padding-x);
+    margin-right: var(--padding-x);
   }
 }
