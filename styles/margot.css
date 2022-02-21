@@ -38,6 +38,11 @@
   --main-bg-color: white;
   --main-container-bg-color: white;
 
+  /* Default values when there is no preset */
+  --main-text-fontsize: 17px;
+  --main-text-fontfamily: "Nunito", sans-serif;
+  --main-title-fontfamily:'Nunito', sans-serif;
+
   /* Links */
   --link-color: var(--primary-color);
   --link-hover-color: var(--primary-color);
