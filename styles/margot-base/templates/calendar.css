@@ -1,10 +1,17 @@
 /* CALENDAR */
-.fc-head .fc-row {
+.fc-head .fc-row,
+.fc-col-header {
   background-color: var(--neutral-soft-color);
   border-radius: 15px;
   padding-top: 1px;
   line-height: 1.5;
   border: none !important;
+}
+.fc-col-header a {
+  color: var(--navbar-link-color);
+}
+.fc-col-header a:hover {
+  color: var(--navbar-link-hover-color);
 }
 .fc-row.fc-week {
   border-color: transparent;
@@ -12,7 +19,8 @@
 .fc th {
   border-width: 0 !important;
 }
-.fc .table-bordered, .table-bordered td, .table-bordered th {
+.fc .table-bordered, .table-bordered td, .table-bordered th,
+.fc .fc-scrollgrid.fc-scrollgrid-liquid {
   border: none !important;
 }
 .fc tr td:not(:first-child) {
@@ -21,7 +29,7 @@
 .fc .fc-row:not(:last-child) {
   border-bottom: 1px solid var(--neutral-soft-color) !important;
 }
-.fc-head-container {
+.fc-head-container, .fc-col-header, .fc table .fc-col-header {
   font-size: .75em;
   text-transform: capitalize;
 }
@@ -105,21 +113,12 @@ tr .fc-event-container:nth-child(7) a { background-color: var(--secondary-color-
 }
 .fc-prev-button, .fc-next-button {
   border: none !important;
-  font-size: 2rem !important;
   background: none;
   height: auto !important;
   color: var(--primary-color);
 }
 .fc-toolbar .fc-right {
   order: 3;
-}
-.fc-prev-button {
-  padding-left: 0 !important;
-  padding-right: 5px !important;
-}
-.fc-next-button {
-  order: 4;
-  padding-right: 0 !important;
 }
 .fc-toolbar.fc-header-toolbar {
   display: flex;
@@ -140,13 +139,12 @@ tr .fc-event-container:nth-child(7) a { background-color: var(--secondary-color-
   background-color: var(--primary-color);
   color: var(--neutral-light-color);
 }
+
 .fc .alert-default:before, .fc .alert-info:before {
   opacity: 0;
   display: none;
 }
-.fc-week tr:first-child>td>.fc-day-grid-event {
-  /*margin-top: 8px;*/
-}
+
 .fc-agenda-view .fc-day-grid .fc-row .fc-content-skeleton {
   padding-bottom: 8px !important;
 }
@@ -169,7 +167,20 @@ tr .fc-event-container:nth-child(7) a { background-color: var(--secondary-color-
   .fc-toolbar .fc-right > .btn-group {
     float: none;
   }
-  .fc-today-button { display: none; }
+  .fc .fc-today-button, .fc .fc-today-button.fc-button { 
+    font-size: 0px;
+  }
+  .fc .fc-today-button:before, .fc .fc-today-button.fc-button:before { 
+    /* far fa-calendar-alt */
+    content: "\f073";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-size: var(--main-text-fontsize);
+  }
 
   .fc-more-cell > div {
     height: 2rem;
