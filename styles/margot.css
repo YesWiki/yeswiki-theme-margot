@@ -42,7 +42,7 @@
   --main-text-fontsize: 17px;
   --main-text-fontfamily: "Nunito", sans-serif;
   --main-title-fontfamily:'Nunito', sans-serif;
-  --title-h1-color:var(--neutral-color);
+  --title-h1-color:var(--primary-color);
   --title-h2-color:var(--primary-color);
   --title-h3-color:var(--secondary-color-1);
   --title-h4-color:var(--secondary-color-2);
