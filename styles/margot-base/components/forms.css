@@ -214,8 +214,8 @@ input.form-control[type=file]::before {
 }
 .input-group-addon {
   border-radius: 5px 0 0 5px;
-  line-height: 2.7rem;
-  height: 2.7rem;
+  line-height: 46px;
+  height: 46px;
   padding: 0 14px;
   width: auto;
   background-color: var(--primary-color);
@@ -306,10 +306,9 @@ form .col-sm-9 {
 .input-group-addon:last-child, .input-group-btn:last-child > .btn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  height: 2.7rem;
+  height: 46px;
   border: 2px solid var(--primary-color);
   border-left: none;
-  padding-bottom: 8px;
 }
 /* MAP */
 #osmmapform {
