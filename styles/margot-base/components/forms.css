@@ -9,7 +9,7 @@
   margin: 10px 0;
 }
 .form-control, #form-builder-container  {
-  height: 2.7rem;
+  height: 46px;
   padding: .5em 1em .4em 1em;
   font-size: var(--main-text-fontsize);
   color: var(--main-text-color);
@@ -309,6 +309,9 @@ form .col-sm-9 {
   height: 46px;
   border: 2px solid var(--primary-color);
   border-left: none;
+}
+.input-group-btn:last-child > .btn {
+  height: 45.9px;
 }
 /* MAP */
 #osmmapform {
