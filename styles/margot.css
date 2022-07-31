@@ -71,7 +71,7 @@
   --footer-bg-color: transparent;
   --footer-text-color: var(--main-text-color);
   --footer-title-color: var(--main-text-color);
-  --footer-border: 3px solid var(--neutral-soft-color);
+  --footer-border: none; /* because .footer::after*/
 
   --btn-border: none;
   --btn-border-radius: .5em;
