@@ -84,7 +84,42 @@ $(document).ready(function() {
 		  label_elem.append(element);
 		  label_elem.append("<span></span>");
 	    } else {
-		  $(element).after("<span></span>");
+	    
+  	    	// We need to do a special treatment for input with the following structure
+  	    	//	<label>
+  	    	//		<input>
+  	    	//		text
+  	    	//	</label>
+  	    	// The text inside the label is not included in a tag.
+	    	// Without it, the span is created after and it produces a misalignement of label and input
+	    	// The text must be included in the span.
+	    	// Example : 
+	    	// * in the dialog used in the wysiwyg editor when creating a link
+	    	// * for the text of the accept conditions checkbox
+	    	// The text must be included in the created span.
+	    	// Let's check if there is such text	    	    	
+	    	// Let's get it child nodes index
+
+			var vText = ""; // The span's content text, no text was found yet
+	
+			var vParent = element.parentElement; // The label
+	
+			if (vParent && vParent.tagName == "LABEL")
+			{
+				var vIndex = Object.keys(vParent.childNodes).find(key => vParent.childNodes[key].nodeName === "#text");  
+					    
+				// If we found one, let's get its text before to remove it 
+					    
+				if (vIndex)	  
+				{
+					vText = vParent.childNodes[vIndex].nodeValue;
+					vParent.removeChild(vParent.childNodes[vIndex]);
+				}
+			}
+			
+			// Let's create the span with the found text or with nothing if it was not found
+			
+			$(element).after("<span>" + vText + "</span>");
 		}
       }
     }
