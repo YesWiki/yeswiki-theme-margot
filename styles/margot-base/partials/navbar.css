@@ -83,19 +83,19 @@
     margin: 0 1rem;
     padding: .8rem 1.5rem;
   }
-  #yw-topnav .links-container .nav li {
+  #yw-topnav .links-container .nav > li {
     width: 100%;
-    z-index: 10;
+    z-index: auto;
     text-align: center;
   }
-  #yw-topnav .links-container .nav li:before {
+  #yw-topnav .links-container .nav > li:before {
     content: " ";
     position: absolute;
     left: 0;
     right: 0;
     top: 1.2rem;
     height: 1px;
-    z-index: -1;
+    z-index: auto;
     background-color: var(--navbar-link-color);
   }
   #yw-topnav .links-container .nav a:not(.btn) {
