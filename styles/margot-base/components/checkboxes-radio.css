@@ -7,6 +7,14 @@ td > label.checkbox, td > label.radio {
 [type="radio"] + span:not(.lever) {
   font-weight: normal;
 }
+
+/* Radio and checkbox inside form-control */
+.form-control .checkbox.inline-container,
+.form-control .radio.inline-container {
+  margin-top: 5px;
+}
+
+
 /* Checkboxes
    ========================================================================== */
 /* Remove default checkbox */
