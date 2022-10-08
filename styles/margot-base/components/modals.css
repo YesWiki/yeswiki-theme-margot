@@ -1,3 +1,9 @@
+body.modal-open {
+  /* remove bootstrap rule for overflow, so the scroolbar still appear when we open the modal
+  This prevent a UI glitch where the whole page move from the right because of the scrollbar lost */
+  overflow: auto;
+}
+
 .modal-content {
   box-shadow: none;
   border: none;
