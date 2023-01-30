@@ -151,6 +151,12 @@ ul {
   img, video, iframe {
     max-width: 100% !important;
   }
+  .media > .media-left > img {
+    max-width: initial !important;
+  }
+  .media {
+    overflow: auto;
+  }
 }
 
 /* Icon compatibility ; not fontawesome*/
