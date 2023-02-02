@@ -1,2 +1,2 @@
 # yeswiki-theme-margot
-New default theme for YesWiki Doriphore
+New default theme for YesWiki Doryphore
