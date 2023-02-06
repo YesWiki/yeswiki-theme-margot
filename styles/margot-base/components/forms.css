@@ -55,10 +55,12 @@ textarea.form-control {
   text-align: left;
   color: var(--primary-color);
   width: auto !important;
+  max-width: calc(100% - 72px) !important;
   font-weight: 600;
   padding-left: 15px;
   font-size: 14px;
   margin: 0;
+  line-height: 1em;
 }
 .form-group:not(.file) .control-label {
   height: auto;
@@ -398,24 +400,24 @@ form .col-sm-9 {
   padding-top: 5px;
 }
 /* handle textarea with aceditor */
-.scroll-container-toolbar {
+.controls .scroll-container-toolbar {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-.scroll-container-toolbar::-webkit-scrollbar {
+.controls .scroll-container-toolbar::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
-.scroll-container-toolbar .aceditor-toolbar {
+.controls .scroll-container-toolbar .aceditor-toolbar {
   width: 900px;
   padding-bottom: 8px;
 }
 .form-group.wiki-textarea .control-label {
   position: relative !important;
-  top: 59px !important;
+  top: 62px !important;
   left: 1.7rem !important;
   margin-top: -20px;
 }
