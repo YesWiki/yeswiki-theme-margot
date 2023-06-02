@@ -1,0 +1,34 @@
+/* Styles for yeswiki's template
+ * under GNU General Public License
+ * Variante du style margot avec barre de menu blanche
+ */
+@import 'margot.css';
+
+/*
+ * CSS variables
+ */
+:root {
+  /* couleur de la barre de menu */
+ --navbar-bg-color: white; 
+
+ --navbar-text-color: var(--neutral-color); 
+
+ --navbar-link-color: var(--neutral-color); 
+
+/* --navbar-link-bg-color: transparent; */
+
+ --navbar-link-hover-color:var(--primary-color); 
+}
+#yw-topnav {  box-shadow: 0px 0px 20px #0000000f;}
+
+@media (max-width: 1200px) {
+  :root {
+    --main-text-fontsize: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --main-text-fontsize: 13px;
+  }
+}
