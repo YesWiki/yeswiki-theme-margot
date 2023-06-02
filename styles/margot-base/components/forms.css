@@ -21,6 +21,10 @@
 .form-control {
   padding: 3px 1em 0 0.8em;
 }
+.form-control[disabled] {
+  background-color: var(--neutral-light-color);
+}
+
 .ace-editor-container,
 .ace-body {
   background-color: #f9f9f9;
