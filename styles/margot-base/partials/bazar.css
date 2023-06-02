@@ -16,6 +16,8 @@ pre.precsv {
 .bazar-table {
   table-layout: auto !important; /* better for responsivness */
 }
+.bazar-table td{max-width:50vw;} /* fix when form description is long */
+
 /* display fiche */
 
 .BAZ_fiche_titre {
