@@ -107,10 +107,6 @@ pre.precsv {
 }
 
 /* LISTES */
-ul.list-sortables {
-  margin-bottom: 1.5rem !important;
-}
-
 .suppression_label_liste {
   background-color: var(--danger-color) !important;
   opacity: .8;
