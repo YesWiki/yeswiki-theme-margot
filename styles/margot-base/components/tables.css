@@ -41,14 +41,6 @@ table.dataTable .prevent-sorting:after {
 table.dataTable td>select {
   width: 200px !important;
 }
-.table-responsive {
-  margin-left: -15px;
-  margin-right: -15px;
-  width: calc(100% + 30px);
-}
-.table-responsive .row {
-  margin: 0;
-}
 
 /* Header */
 .dataTables_header {
