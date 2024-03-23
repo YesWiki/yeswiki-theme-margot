@@ -21,3 +21,7 @@
 #yw-header .navbar-header {
   display: none;
 }
+/* make the first section in a page higher, to behave like a header */
+.page > :first-child:is(section) {
+  margin-top: -1.5rem;
+}
