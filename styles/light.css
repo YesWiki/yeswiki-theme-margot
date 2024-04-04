@@ -25,7 +25,12 @@
   background: transparent !important;
   color: var(--navbar-link-color) !important;
 }
-
+#yw-topnav .btn.btn-default:hover,
+#yw-topnav .btn.btn-default:focus,
+#yw-topnav .btn.btn-default:active
+{
+  color: var(--primary-color) !important;
+}
 #yw-topnav .dropdown-menu {
   border: 1px solid var(--neutral-light-color);
   border-top:none;
