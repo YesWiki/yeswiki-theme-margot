@@ -21,6 +21,16 @@
 }
 #yw-topnav { border-bottom: 1px solid var(--neutral-light-color);}
 
+#yw-topnav .btn.btn-default {
+  background: transparent !important;
+  color: var(--navbar-link-color) !important;
+}
+
+#yw-topnav .dropdown-menu {
+  border: 1px solid var(--neutral-light-color);
+  border-top:none;
+}
+
 @media (max-width: 1200px) {
   :root {
     --main-text-fontsize: 15px;
