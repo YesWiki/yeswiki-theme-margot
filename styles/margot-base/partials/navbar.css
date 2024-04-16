@@ -289,6 +289,19 @@
   background-color: var(--navbar-link-color);
 }
 
+#yw-topnav .dropdown-menu .navbar-btn {
+  border: 1px solid var(--navbar-link-color);
+  display: block;
+  width: calc(100% - 2rem);
+  transition: none;
+}
+
+#yw-topnav .dropdown-menu .navbar-btn:hover {
+  background-color: var(--navbar-bg-color) !important;
+  color: var(--navbar-link-color) !important;
+  border: 1px solid var(--navbar-link-color);
+}
+
 /* ----------------- */
 /*     SEARCH        */
 /* ----------------- */
