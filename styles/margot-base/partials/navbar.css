@@ -1,3 +1,8 @@
+#yw-a11y-jump-content {
+  padding: 6px 12px;
+  margin: 6px 0 0 12px;
+  transition: none;
+}
 /* Menu horizontal principal */
 
 #yw-topnav {
