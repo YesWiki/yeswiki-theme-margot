@@ -197,5 +197,7 @@
     }
 }
 
-
-
+#yw-container .dropdown-toggle:focus {
+  /* reset bootstrap: a11y: all buttons should have an outline */
+  outline: 5px auto;
+}

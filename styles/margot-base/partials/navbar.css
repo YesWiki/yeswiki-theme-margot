@@ -204,10 +204,6 @@
 
 /* ----------------- */
 .navbar-btn { margin: 0 } /* reset bootstrap */
-#yw-topnav .btn, #yw-topnav .btn:hover, #yw-topnav .btn:focus {
-  outline: none;
-}
-
 #yw-topnav .navbar-nav > li > a.btn {
   margin: 0 .5rem;
 }
