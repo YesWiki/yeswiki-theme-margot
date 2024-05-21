@@ -2,7 +2,7 @@
   color: var(--primary-color);
 }
 
-.agenda-container .agenda-entry fig-caption:before {
+.agenda-container .agenda-entry fig-caption::before {
   background: var(--primary-color);
   opacity: .8;
 }

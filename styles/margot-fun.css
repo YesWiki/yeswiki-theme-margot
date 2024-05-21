@@ -1,35 +1,31 @@
-@import 'margot-base/partials/general.css';
-@import 'margot-base/partials/navbar.css';
-@import 'margot-base/partials/header.css';
-@import 'margot-base/partials/main-containers.css';
-@import 'margot-base/partials/footer.css';
-@import 'margot-base/partials/page-edit.css';
-@import 'margot-base/partials/bazar.css';
-@import 'margot-base/partials/admin.css';
-
-@import 'margot-base/components/buttons.css';
-@import 'margot-base/components/bootstrap-components.css';
-@import 'margot-base/components/modals.css';
-@import 'margot-base/components/forms.css';
-@import 'margot-base/components/checkboxes-radio.css';
-@import 'margot-base/components/tables.css';
-
-@import 'margot-base/templates/calendar.css';
-@import 'margot-base/templates/agenda.css';
-@import 'margot-base/templates/facette.css';
-@import 'margot-base/templates/accordion.css';
-@import 'margot-base/templates/search.css';
-@import 'margot-base/templates/annuaire.css';
-
-@import 'margot-fun/general.css';
-@import 'margot-fun/header.css';
-@import 'margot-fun/vertical-menu.css';
+@import url('margot-base/partials/general.css');
+@import url('margot-base/partials/navbar.css');
+@import url('margot-base/partials/header.css');
+@import url('margot-base/partials/main-containers.css');
+@import url('margot-base/partials/footer.css');
+@import url('margot-base/partials/page-edit.css');
+@import url('margot-base/partials/bazar.css');
+@import url('margot-base/partials/admin.css');
+@import url('margot-base/components/buttons.css');
+@import url('margot-base/components/bootstrap-components.css');
+@import url('margot-base/components/modals.css');
+@import url('margot-base/components/forms.css');
+@import url('margot-base/components/checkboxes-radio.css');
+@import url('margot-base/components/tables.css');
+@import url('margot-base/templates/calendar.css');
+@import url('margot-base/templates/agenda.css');
+@import url('margot-base/templates/facette.css');
+@import url('margot-base/templates/accordion.css');
+@import url('margot-base/templates/search.css');
+@import url('margot-base/templates/annuaire.css');
+@import url('margot-fun/general.css');
+@import url('margot-fun/header.css');
+@import url('margot-fun/vertical-menu.css');
 
 :root {
   --success-color: #a0d95d;
   --danger-color: #f09989;
   --warning-color: #fab44c;
-
   --main-text-color: var(--neutral-color);
   --main-bg-color: white;
   --main-container-bg-color: white;
@@ -53,30 +49,25 @@
   --navbar-border: none;
   --navbar-border-radius: 0;
   --navbar-shadow: none;
-
-
   --header-bg-color: var(--neutral-light-color);
   --header-text-color: var(--neutral-color);
   --header-title-color: var(--neutral-color);
-
   --footer-bg-color: var(--neutral-light-color);
   --footer-text-color: var(--main-text-color);
   --footer-title-color: var(--main-text-color);
   --footer-border-top: 3px solid var(--neutral-soft-color);
-
   --btn-border: none;
   --btn-border-radius: .5em;
-
   --checkbox-color: var(--neutral-color)
 }
 
-@media (max-width: 1200px) {
+@media (width <= 1200px) {
   :root {
     --main-text-fontsize: 15px;
   }
 }
 
-@media (max-width: 800px) {
+@media (width <= 800px) {
   :root {
     --main-text-fontsize: 13px;
   }

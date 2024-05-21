@@ -7,12 +7,14 @@
 }
 section {padding:1rem;}
 
-@media (max-width: 1200px) {
+@media (width <= 1200px) {
   section.full-width .container { padding: 0 1.5rem; }
 }
-@media (max-width: 800px) {
+
+@media (width <= 800px) {
   section.full-width .container { padding: 0 1rem; }
 }
+
 section.with-bg-pattern .container {
   background-color: var(--main-bg-color);
   border-radius: .5rem;
@@ -20,52 +22,66 @@ section.with-bg-pattern .container {
   margin-bottom: 2rem;
   padding: 2rem 2.5rem;
 }
-@media (max-width: 900px) {
+
+@media (width <= 900px) {
   section.with-bg-pattern .container {
     padding: 1rem;
   }
 }
+
 section.with-bg-pattern:not(.full-width) .container {
   margin: 1rem 2rem;
 }
+
 .yw-headerpage section.with-bg-pattern:not(.full-width) .container {
   margin: 1rem auto !important;
 }
+
 section .well {
   background-color: var(--main-bg-color);
   border: none;
   margin: 1rem 0;
   padding: 2rem 2.5rem;
 }
+
 .label {
   padding: .2em .5em;
   vertical-align: middle;
 }
+
 .label-default {
   background-color:var(--neutral-color);
 }
+
 .label-primary {
   background-color:var(--primary-color);
 }
+
 .label-info {
   background-color:var(--primary-color);
   opacity: .6;
 }
+
 .label-success {
   background-color:var(--success-color);
 }
+
 .label-warning {
   background-color:var(--warning-color);
 }
+
 .label-danger {
   background-color:var(--danger-color);
 }
+
 .label-secondary-1 {
   background-color:var(--secondary-color-1);
 }
+
 .label-secondary-2 {
   background-color:var(--secondary-color-2);
 }
+
 /* tag label in leaflet */
 .leaflet-container a.tag-label {
   color: var(--neutral-light-color);
@@ -78,21 +94,21 @@ section .well {
   color:var(--neutral-color) !important;
   z-index: 0;
 }
-.alert-default:before, .alert-info:before {
+
+.alert-default::before, .alert-info::before {
   content: " ";
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  inset: 0;
   border-radius: .3rem;
   opacity: .3;
   z-index: -1;
 }
-.alert-default:before {
+
+.alert-default::before {
   background-color: var(--neutral-color);
 }
-.alert-info:before {
+
+.alert-info::before {
   background-color: var(--primary-color);
 }
 
@@ -101,21 +117,27 @@ section .well {
   border-radius: .3rem;
   color: var(--neutral-light-color);
 }
+
 .alert-primary {
   background-color: var(--primary-color);
 }
+
 .alert-success {
   background-color: var(--success-color);
 }
+
 .alert-danger {
   background-color: var(--danger-color);
 }
+
 .alert-warning {
   background-color: var(--warning-color);
 }
+
 .alert-secondary-1 {
   background-color: var(--secondary-color-1);
 }
+
 .alert-secondary-2 {
   background-color: var(--secondary-color-2);
 }
@@ -127,94 +149,122 @@ section .well {
   border-width: 3px;
   border-radius: 5px;
 }
+
 .panel-heading {
   border-radius: 0;
   padding: .6rem 1rem;
 }
+
 .panel-default {
   border-color: var(--neutral-color);
+
   --checkbox-color: var(--neutral-color);
 }
+
 .panel-default:not(.note-editor) > .panel-heading {
   color: var(--neutral-light-color);
   background-color: var(--neutral-color);
   border-color: var(--neutral-color);
 }
+
 .panel-title > .alert-msg {
   margin-right: 2rem;
   font-size: .9rem;
   margin-top: 1px;
 }
+
 .panel-primary {
   border-color: var(--primary-color);
+
   --checkbox-color: var(--primary-color);
 }
+
 .panel-primary > .panel-heading {
   color: var(--neutral-light-color);
   background-color: var(--primary-color);
   border-color: var(--primary-color);
 }
+
 .panel-secondary-1{
   border-color: var(--secondary-color-1);
+
   --checkbox-color: var(--secondary-color-1);
 }
+
 .panel-secondary-1 > .panel-heading {
   color: var(--neutral-light-color);
   background-color: var(--secondary-color-1);
   border-color: var(--secondary-color-1);
 }
+
 .panel-secondary-2 {
   border-color: var(--secondary-color-2);
+
   --checkbox-color: var(--secondary-color-2);
 }
+
 .panel-secondary-2 > .panel-heading {
   color: var(--neutral-light-color);
   background-color: var(--secondary-color-2);
   border-color: var(--secondary-color-2);
 }
+
 .panel-info {
   border-color: var(--primary-color);
+
   --checkbox-color: var(--primary-color);
 }
+
 .panel-info > .panel-heading {
   color: var(--neutral-light-color);
   background-color: var(--primary-color);
   opacity: .6;
   border-color: var(--primary-color);
 }
+
 .panel-warning {
   border-color: var(--warning-color);
+
   --checkbox-color: var(--warning-color);
 }
+
 .panel-warning > .panel-heading {
   color: var(--neutral-light-color);
   background-color: var(--warning-color);
   border-color: var(--warning-color);
 }
+
 .panel-success {
   border-color: var(--success-color);
+
   --checkbox-color: var(--success-color);
 }
+
 .panel-success > .panel-heading {
   color: var(--neutral-light-color);
   background-color: var(--success-color);
   border-color: var(--success-color);
 }
+
 .panel-danger {
   border-color: var(--danger-color);
+
   --checkbox-color: var(--danger-color);
 }
+
 .panel-danger > .panel-heading {
   color: var(--neutral-light-color);
   background-color: var(--danger-color);
   border-color: var(--danger-color);
 }
 
-.panel-heading[data-toggle=collapse] {
+.panel-heading[data-toggle="collapse"] {
   --chevron-color: var(--neutral-light-color);
+
   position: relative;
 }
-.panel-heading[data-toggle=collapse]:after {
+
+.panel-heading[data-toggle="collapse"]::after {
   content: "";
   position: absolute;
   top: 1.3em;
@@ -227,19 +277,22 @@ section .well {
   border-left: .17rem solid var(--chevron-color);
   border-right: .17rem solid transparent;
   border-bottom: .17rem solid transparent;
-  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
   transform: rotate(45deg);
 }
-.panel-heading.collapsed[data-toggle=collapse]:after {
+
+.panel-heading.collapsed[data-toggle="collapse"]::after {
   top: .9em;
   border-top: .17rem solid transparent;
   border-left: .17rem solid transparent;
   border-right: .17rem solid var(--chevron-color);
   border-bottom: .17rem solid var(--chevron-color);
 }
-.panel-heading[data-toggle=collapse]:hover:after {
+
+.panel-heading[data-toggle="collapse"]:hover::after {
   opacity: 1;
 }
+
 .panel-heading .panel-title {
   font-size: var(--main-text-fontsize);
   line-height: inherit;
@@ -251,31 +304,37 @@ section .well {
   color: var(--neutral-light-color);
   background-color: var(--primary-color);
 }
+
 .nav-tabs>li>a i {
   margin-right: 8px;
 }
 
-/* background color classes*/
+/* background color classes */
 .bg-primary {
   color: var(--neutral-light-color);
   background-color: var(--primary-color);
 }
+
 .bg-primary h1, .bg-primary h2, .bg-primary h3,
 .bg-primary h4, .bg-primary h5,.bg-primary h6 {
   color: inherit;
 }
+
 .bg-secondary-1 {
   color: var(--neutral-light-color);
   background-color: var(--secondary-color-1);
 }
+
 .bg-secondary-1 h1, .bg-secondary-1 h2, .bg-secondary-1 h3,
 .bg-secondary-1 h4, .bg-secondary-1 h5,.bg-secondary-1 h6 {
   color: inherit;
 }
+
 .bg-secondary-2 {
   color: var(--neutral-light-color);
   background-color: var(--secondary-color-2);
 }
+
 .bg-secondary-2 h1, .bg-secondary-2 h2, .bg-secondary-2 h3,
 .bg-secondary-2 h4, .bg-secondary-2 h5,.bg-secondary-2 h6 {
   color: inherit;

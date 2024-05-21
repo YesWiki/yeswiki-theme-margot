@@ -1,6 +1,7 @@
 .type-modif-container {
   margin-bottom: 1rem;
 }
+
 .type-modif-container label {
   display: block;
   font-weight: normal;
@@ -9,6 +10,7 @@
 .edit-acl-container {
   margin-bottom: 1.5rem;
 }
+
 .edit-acl-container .switch {
   margin-bottom: .5rem ;
 }
@@ -20,11 +22,12 @@ td > label, th > label {
   margin: 0;
   width: 1.2rem;
 }
-@media (max-width: 1200px) {
+
+@media (width <= 1200px) {
   td > label, th > label { padding-left: .2rem; }
 }
 
-input[name=theme_modifier], input[name=geredroits_modifier] {
+input[name="theme_modifier"], input[name="geredroits_modifier"] {
   width: 100%;
   display: block;
 }
@@ -42,6 +45,7 @@ label.edit-group strong {
 .table-condensed.table-updates tr > th:first-child {
   padding-left: 1rem;
 }
+
 .table-condensed.table-updates tr > td:last-child {
   text-align: center;
 }
@@ -53,6 +57,7 @@ label.edit-group strong {
 #accordion_update .dataTables_header {
   margin: .5rem -.3rem 0  0;
 }
+
 #accordion_update .dataTables_footer {
-  margin: 0 0 .5rem 0;
+  margin: 0 0 .5rem;
 }

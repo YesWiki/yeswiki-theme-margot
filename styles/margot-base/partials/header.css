@@ -3,6 +3,7 @@
   background-color: var(--header-bg-color);
   color: var(--header-text-color);
 }
+
 #yw-header h1,#yw-header h2, #yw-header h3 ,#yw-header h4, #yw-header h5, #yw-header h6  {
   color: var(--header-title-color);
 }
@@ -14,13 +15,16 @@
 #yw-header .white h1, #yw-header .white h2, #yw-header .white h3, #yw-header .white h4, #yw-header .white h5, #yw-header .white h6, #yw-header .white a, #yw-header .white a:hover {
   color:var(--neutral-light-color) !important;
 }
+
 #yw-header .background-image {
   background-position: center;
   background-size: cover;
 }
+
 #yw-header .navbar-header {
   display: none;
 }
+
 /* make the first section in a page higher, to behave like a header */
 .page > :first-child:is(section) {
   margin-top: -1.5rem;

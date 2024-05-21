@@ -25,7 +25,8 @@ pre.precsv {
   align-items: center;
   font-size: 2.5rem;
 }
-.BAZ_fiche_titre:after {
+
+.BAZ_fiche_titre::after {
   background-color: var(--primary-color);
   content: "";
   flex: 1;
@@ -41,22 +42,23 @@ pre.precsv {
   font-weight: 600 !important;
 }
 
-.BAZ_cadre_fiche [data-id=bf_image] {
+.BAZ_cadre_fiche [data-id="bf_image"] {
   float: right;
   padding: 0 0 20px 20px;
   max-width: 40%;
 }
-.BAZ_cadre_fiche [data-id=bf_image].left {
+
+.BAZ_cadre_fiche [data-id="bf_image"].left {
   float: left;
   padding: 0 20px 20px 0;
   max-width: 40%;
 }
-.BAZ_cadre_fiche [data-id=bf_image] img {
+
+.BAZ_cadre_fiche [data-id="bf_image"] img {
   width: 100%;
 }
 
 .export-links {
-  margin-top: 40px;
   margin-top: 20px;
 }
 
@@ -69,6 +71,7 @@ pre.precsv {
 .list-sortables .liste_ligne {
   display: flex !important;
 }
+
 .list-sortables .liste_ligne .input-label {
   flex: 2 !important;
 }
@@ -76,9 +79,11 @@ pre.precsv {
 .handle-listitems {
   background-color: var(--neutral-color) !important;
 }
+
 .handle-listitems + input {
   border-left: none !important;
 }
+
 .btn.ajout_label_liste {
   background-color: var(--neutral-light-color);
   color: var(--primary-color);
@@ -98,9 +103,11 @@ pre.precsv {
   opacity: .8;
   background-color: transparent;
 }
+
 .modal .BAZ_fiche_info {
   padding-bottom: 0;
 }
+
 .BAZ_actions_fiche {
   padding-top: .4rem;
 }
