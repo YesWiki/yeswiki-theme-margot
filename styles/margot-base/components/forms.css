@@ -1,5 +1,5 @@
 .control-label::after {
-  content: "";
+  content: '';
   margin-right: 0;
 }
 
@@ -133,7 +133,7 @@ form#form-modal-upload .form-group.wrapper.checkbox .control-label {
 
 .form-group:not(.file, .checkbox) .control-label:not(.title-label)::before,
 .form-group.wrapper.checkbox .control-label:not(.title-label)::before {
-  content: "";
+  content: '';
   background-color: #f9f9f9;
   position: absolute;
   bottom: 0;
@@ -222,7 +222,6 @@ form#form-modal-upload .form-group.wrapper.checkbox .control-label {
 .form-control.wrapper {
   height: auto;
   margin-left: 0;
-  padding-left: 0;
   padding-bottom: 10px;
   margin-bottom: 1.5rem;
   margin-top: 1.8rem;
@@ -241,15 +240,15 @@ label .symbole_obligatoire {
   margin-top: 0;
 }
 
-input.form-control[type="file"] {
+input.form-control[type='file'] {
   padding-left: 0;
   padding-top: 0.5em;
   cursor: pointer;
   position: relative;
 }
 
-input.form-control[type="file"]::before {
-  content: "Choisir un fichier";
+input.form-control[type='file']::before {
+  content: 'Choisir un fichier';
   position: absolute;
   top: 0;
   font-size: 0.9em;
@@ -337,11 +336,11 @@ input + .input-group-addon {
   height: 2.7rem;
 }
 
-input[type="file"] ~ output {
+input[type='file'] ~ output {
   padding: 0;
 }
 
-input[type="file"] ~ output img {
+input[type='file'] ~ output img {
   border-radius: 3px;
   max-height: 150px;
   margin-top: 10px;
@@ -354,10 +353,15 @@ form {
 form.form-horizontal {
   margin-bottom: 1.5rem;
 }
+form.form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 form .col-sm-9 {
   width: 100%;
   margin: 0;
+  padding: 0;
 }
 
 .symbole_obligatoire.col-sm-9.col-sm-offset-3 {
@@ -432,7 +436,7 @@ form .col-sm-9 {
     top: 0.7rem;
   }
 
-  input.form-control[type="file"]::before {
+  input.form-control[type='file']::before {
     padding: 1px 1rem 0 0.8rem;
   }
 }
@@ -460,8 +464,8 @@ form .col-sm-9 {
   margin-right: 1rem;
 }
 
-.inline-container [type="radio"]:not(:checked) + span:not(.lever),
-.inline-container [type="radio"]:checked + span:not(.lever) {
+.inline-container [type='radio']:not(:checked) + span:not(.lever),
+.inline-container [type='radio']:checked + span:not(.lever) {
   margin-right: -5px;
 }
 

@@ -6,7 +6,8 @@ pre.precsv {
   margin-bottom: 15px;
 }
 
-#btn-import-forms, #btn-import-lists {
+#btn-import-forms,
+#btn-import-lists {
   height: 2.7rem;
   padding: 0 14px;
   border: none;
@@ -16,8 +17,14 @@ pre.precsv {
 .bazar-table {
   table-layout: auto !important; /* better for responsivness */
 }
-.bazar-table td{max-width:50vw;} /* fix when form description is long */
+.bazar-table td {
+  max-width: 50vw;
+} /* fix when form description is long */
 
+.titre_type_fiche {
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+}
 /* display fiche */
 
 .BAZ_fiche_titre {
@@ -28,7 +35,7 @@ pre.precsv {
 
 .BAZ_fiche_titre::after {
   background-color: var(--primary-color);
-  content: "";
+  content: '';
   flex: 1;
   height: 12px;
   border-radius: 12px;
@@ -42,19 +49,19 @@ pre.precsv {
   font-weight: 600 !important;
 }
 
-.BAZ_cadre_fiche [data-id="bf_image"] {
+.BAZ_cadre_fiche [data-id='bf_image'] {
   float: right;
   padding: 0 0 20px 20px;
   max-width: 40%;
 }
 
-.BAZ_cadre_fiche [data-id="bf_image"].left {
+.BAZ_cadre_fiche [data-id='bf_image'].left {
   float: left;
   padding: 0 20px 20px 0;
   max-width: 40%;
 }
 
-.BAZ_cadre_fiche [data-id="bf_image"] img {
+.BAZ_cadre_fiche [data-id='bf_image'] img {
   width: 100%;
 }
 
@@ -65,7 +72,7 @@ pre.precsv {
 /* LISTES */
 .suppression_label_liste {
   background-color: var(--danger-color) !important;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .list-sortables .liste_ligne {
@@ -91,7 +98,7 @@ pre.precsv {
 }
 
 .BAZ_cadre_fiche .BAZ_fiche_info {
-  font-size: .85rem;
+  font-size: 0.85rem;
   border: none;
   box-shadow: none;
   padding: 0;
@@ -100,7 +107,7 @@ pre.precsv {
   padding-top: 1rem;
   margin-top: 1rem;
   border-radius: 0;
-  opacity: .8;
+  opacity: 0.8;
   background-color: transparent;
 }
 
@@ -109,5 +116,5 @@ pre.precsv {
 }
 
 .BAZ_actions_fiche {
-  padding-top: .4rem;
+  padding-top: 0.4rem;
 }
