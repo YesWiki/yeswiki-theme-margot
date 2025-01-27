@@ -1,5 +1,5 @@
 .footer {
-  font-size: .8em;
+  font-size: 0.8em;
   margin: 2em 0 1em;
   padding: 0;
   text-align: center;
@@ -9,7 +9,7 @@
 
 .footer a {
   color: var(--neutral-soft-color);
-  padding: .3em .6em;
+  padding: 0.3em 0.6em;
   text-decoration: none;
   display: inline-block;
   margin: 0;
@@ -20,41 +20,45 @@
   content: "";
   background-color: var(--neutral-soft-color);
   position: absolute;
-  left: 1rem;
-  right: 1rem;
-  bottom: -1rem;
-  height: .5rem;
-  border-radius: .5rem;
+  left: 1em;
+  right: 1em;
+  bottom: -1em;
+  height: 0.5em;
+  border-radius: 0.5em;
 }
 
 .footer a:hover {
   text-decoration: none;
   color: var(--neutral-color);
-  transition: color .2s;
+  transition: color 0.2s;
 }
 
 .footer a i {
   color: var(--primary-color);
   font-size: 1.2em;
   margin-right: 6px;
-  opacity: .7;
-  transition: opacity .2s;
+  opacity: 0.7;
+  transition: opacity 0.2s;
 }
 
 .footer a:hover i {
   opacity: 1;
 }
 
-
 /* Pied de page */
 
 #yw-footer {
   background-color: var(--footer-bg-color);
   color: var(--footer-text-color);
-  padding: 30px 0;
+  padding: 2em 0;
 }
 
-#yw-footer h1, #yw-footer h2, #yw-footer h3, #yw-footer h4, #yw-footer h5, #yw-footer h6 {
+#yw-footer h1,
+#yw-footer h2,
+#yw-footer h3,
+#yw-footer h4,
+#yw-footer h5,
+#yw-footer h6 {
   color: var(--footer-title-color);
 }
 
@@ -63,8 +67,12 @@
     display: flex;
     justify-content: space-around;
   }
-  .footer a > span { display: none; }
-  .footer a i { font-size: 1.1rem; }
+  .footer a > span {
+    display: none;
+  }
+  .footer a i {
+    font-size: 1.1em;
+  }
 
   .footer::after {
     left: 0;
@@ -72,3 +80,4 @@
     border-radius: 0;
   }
 }
+
