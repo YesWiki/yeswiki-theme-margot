@@ -2,6 +2,7 @@
 var didScroll;
 var lastScrollTop = 0;
 var scrolldelta = 5;
+var body = $('body');
 var ywnavbar = $('#yw-topnav');
 var navbarHeight = ywnavbar.outerHeight();
 var minOffsetForHiding = 300;
@@ -28,12 +29,16 @@ function hasScrolled() {
   if (st > lastScrollTop && st > navbarHeight && ywnavbar.hasClass('fixable') && st > minOffsetForHiding) {
     // Scroll Down
     ywnavbar.addClass('nav-up');
+    body.addClass('nav-up');
     ywnavbar.removeClass('nav-down');
+    body.removeClass('nav-down');
   } else {
     // Scroll Up
     if (st + $(window).height() < $(document).height()) {
       ywnavbar.addClass('nav-down');
+      body.addClass('nav-down');
       ywnavbar.removeClass('nav-up');
+      body.removeClass('nav-up');
     }
   }
 
