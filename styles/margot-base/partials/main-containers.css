@@ -34,7 +34,6 @@
 @media (width <= 800px) {
   #yw-main {
     flex-direction: column;
-    overflow-x: auto;
   }
 
   .page, .menupage, .rightcolumnpage {
