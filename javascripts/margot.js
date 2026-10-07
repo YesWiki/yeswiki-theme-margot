@@ -169,9 +169,11 @@ $(document).ready(function() {
     $links = $("#yw-topnav:visible .links-container");
     if ($links.is(":visible")) {
       $links.fadeOut(200);
+      $(this).attr("aria-expanded", "false");
       $("#yw-topnav:visible .menu-backdrop").remove();
     } else {
       $links.fadeIn(200);
+      $(this).attr("aria-expanded", "true");
       $backdrop = $("<div class='menu-backdrop'></div>");
       $links.before($backdrop);
       $backdrop.click(function(e) {
